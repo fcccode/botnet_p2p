@@ -1,0 +1,74 @@
+syntax = "proto3";
+package botnet_p2p;
+
+message Message {
+    enum MessageType {
+        UNDEFINED = 0;
+        COMMAND = 1;
+        RESPONSE = 2;
+        FILE_CHUNK = 3;
+        NAT_REQUEST = 4;
+        NAT_CHECK = 5;
+        PING = 6;
+        JOIN = 7;
+        LEAVE = 8;
+    }
+    enum Status {
+        FAIL = 0;
+        OK = 1;
+    }
+
+
+    message Command {
+        string command = 1;
+        bool sendResponse = 2;
+    }
+
+    message Response {
+        string value = 1;
+        Status status = 2;
+    }
+    
+    message FileChunk {
+        string path = 1;
+        bool name = 2;
+        uint32 chunkNumber = 3;
+        uint32 allChunks = 4;
+        uint32 chunkSize = 5;
+        bytes data = 6;
+    }
+
+    message NATRequest {
+        string target = 1;
+    }
+
+    message NATCheck {
+        string source = 1;
+    }
+
+    message Join {
+        string IP = 1;
+        string Port = 2;
+        bool isNAT = 3;
+    }
+    
+    message Leave {
+        string guid = 1;
+    }
+    
+    string uuid = 1;
+    MessageType TYPE = 2;
+    string sender = 3;
+    string receiver = 4;
+    bool propagation = 5;
+    bytes signature = 6;
+    oneof payload {
+        Command command = 7;
+        Response response = 8;
+        FileChunk file = 9;
+        NATRequest natRequest = 10;
+        NATCheck natCheck = 11;
+        Join join = 12;
+        Leave leave = 13;
+    }
+}
