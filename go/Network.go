@@ -8,11 +8,21 @@ import (
 	"github.com/golang/protobuf/proto"
 )
 
+type UUID string
+
 type NodeDescription struct {
 	isNAT bool
 }
 
+type RoutingTable struct {
+	hosts map[UUID]net.Conn
+}
+
 var nodeDesc NodeDescription
+var routingTable RoutingTable
+
+func fillRoutingTable(connection net.Conn) {
+}
 
 func clientRoutine() {
 
@@ -28,6 +38,8 @@ func clientRoutine() {
 		connection = conn
 		break
 	}
+	log.Printf("NAT: %t\n", nodeDesc.isNAT)
+	fillRoutingTable(connection)
 	defer connection.Close()
 }
 

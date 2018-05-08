@@ -25,7 +25,7 @@ func getRemoteIP() (string, error) {
 }
 
 func getLocalIPs() ([]string, error) {
-	ips := make([]string, 8)
+	ips := make([]string, 0, 8)
 	interfaces, err := net.Interfaces()
 	if err != nil {
 		return ips, err

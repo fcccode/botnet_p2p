@@ -9,10 +9,11 @@ import (
 func main() {
 	var addr = "127.0.0.1:6666"
 	conn, err := net.Dial("tcp", addr)
-	defer conn.Close()
 	if err != nil {
 		log.Fatalln(err)
+		return
 	}
+	defer conn.Close()
 	message := &Message{}
 	message.TYPE = Message_JOIN
 	out, _ := proto.Marshal(message)

