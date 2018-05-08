@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net"
 	"strconv"
 	"log"
@@ -9,7 +8,30 @@ import (
 	"github.com/golang/protobuf/proto"
 )
 
-func serverRoutine(port int, terminate chan bool) {
+type NodeDescription struct {
+	isNAT bool
+}
+
+var nodeDesc NodeDescription
+
+func clientRoutine() {
+
+	nodeDesc.isNAT, _ = checkNAT()
+
+	var connection net.Conn
+	for _, ip := range KnownHosts {
+		addr := ip + ":" + strconv.Itoa(defaultPort)
+		conn, err := net.Dial("tcp", addr)
+		if err != nil {
+			continue
+		}
+		connection = conn
+		break
+	}
+	defer connection.Close()
+}
+
+func serverRoutine(port int, terminate chan struct{}) {
 	listener, err := net.Listen("tcp", ":"+strconv.Itoa(port))
 	defer listener.Close()
 	if err != nil {
@@ -17,63 +39,59 @@ func serverRoutine(port int, terminate chan bool) {
 		return
 	}
 	log.Printf("Listeninig at port: %d", port)
-	clients := make([]chan bool, 8)
 	newConnection := make(chan net.Conn)
 
-	go func(l net.Listener) {
+	go func() {
 		for {
-			c, err := l.Accept()
+			c, err := listener.Accept()
 			if err != nil {
 				log.Fatalln(err)
 			}
-			newConnection<-c
+			newConnection <- c
 		}
-	}(listener)
+	}()
+
+	terminateClients := make(chan struct{})
 
 	for {
 		select {
 		case <-terminate:
-			for _, client := range clients {
-				fmt.Println("xD")
-				client<-true
-			}
-			fmt.Printf("Terminating listener\n")
+			log.Println("Terminating listener")
+			close(terminateClients)
 			return
 		case conn := <-newConnection:
 			log.Println("New connection at:", conn.RemoteAddr().String())
-			done := make(chan bool)
-			clients = append(clients, done)
-			go clientHandler(conn, done)
+			go clientHandler(conn, terminateClients)
 		}
 	}
 }
 
-func clientHandler(conn net.Conn, done chan bool) {
+func clientHandler(conn net.Conn, done chan struct{}) {
 	defer conn.Close()
 	buffer := make([]byte, 12000)
 	messageChannel := make(chan Message)
 	go func() {
 		for {
 			message := &Message{}
-			_, err := conn.Read(buffer)
+			n, err := conn.Read(buffer)
 			if err == io.EOF {
 				return
 			}
-			if err := proto.Unmarshal(buffer, message); err != nil {
+			if err := proto.Unmarshal(buffer[:n], message); err != nil {
 				log.Fatalln("Unable to read message.", err)
 				continue
 			}
-			messageChannel<-*message
+			messageChannel <- *message
 		}
 	}()
 
 	for {
 		select {
 		case <-done:
-			fmt.Printf("Terminating connection with client %s\n", conn.RemoteAddr().String())
+			log.Println("Terminating connection with client:", conn.RemoteAddr().String())
 			return
-		case message := <- messageChannel:
-			fmt.Printf("Received message of type: %v\n", message.TYPE.String())
+		case message := <-messageChannel:
+			log.Printf("Received message of type: %v\n", message.TYPE.String())
 		}
 	}
 }
