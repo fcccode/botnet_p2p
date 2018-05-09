@@ -21,7 +21,7 @@ public final class MessageOuterClass {
     /**
      * <code>string uuid = 1;</code>
      */
-    java.lang.String getUuid();
+    String getUuid();
     /**
      * <code>string uuid = 1;</code>
      */
@@ -35,12 +35,12 @@ public final class MessageOuterClass {
     /**
      * <code>.botnet_p2p.Message.MessageType TYPE = 2;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.MessageType getTYPE();
+    Message.MessageType getTYPE();
 
     /**
      * <code>string sender = 3;</code>
      */
-    java.lang.String getSender();
+    String getSender();
     /**
      * <code>string sender = 3;</code>
      */
@@ -50,7 +50,7 @@ public final class MessageOuterClass {
     /**
      * <code>string receiver = 4;</code>
      */
-    java.lang.String getReceiver();
+    String getReceiver();
     /**
      * <code>string receiver = 4;</code>
      */
@@ -68,97 +68,97 @@ public final class MessageOuterClass {
     com.google.protobuf.ByteString getSignature();
 
     /**
-     * <code>.botnet_p2p.Message.Command command = 7;</code>
+     * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
      */
-    boolean hasCommand();
+    boolean hasPCommand();
     /**
-     * <code>.botnet_p2p.Message.Command command = 7;</code>
+     * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.Command getCommand();
+    Message.Command getPCommand();
     /**
-     * <code>.botnet_p2p.Message.Command command = 7;</code>
+     * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.CommandOrBuilder getCommandOrBuilder();
+    Message.CommandOrBuilder getPCommandOrBuilder();
 
     /**
-     * <code>.botnet_p2p.Message.Response response = 8;</code>
+     * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
      */
-    boolean hasResponse();
+    boolean hasPResponse();
     /**
-     * <code>.botnet_p2p.Message.Response response = 8;</code>
+     * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.Response getResponse();
+    Message.Response getPResponse();
     /**
-     * <code>.botnet_p2p.Message.Response response = 8;</code>
+     * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.ResponseOrBuilder getResponseOrBuilder();
+    Message.ResponseOrBuilder getPResponseOrBuilder();
 
     /**
-     * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+     * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
      */
-    boolean hasFile();
+    boolean hasPFile();
     /**
-     * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+     * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.FileChunk getFile();
+    Message.FileChunk getPFile();
     /**
-     * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+     * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.FileChunkOrBuilder getFileOrBuilder();
+    Message.FileChunkOrBuilder getPFileOrBuilder();
 
     /**
-     * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+     * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
      */
-    boolean hasNatRequest();
+    boolean hasPNATRequest();
     /**
-     * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+     * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.NATRequest getNatRequest();
+    Message.NATRequest getPNATRequest();
     /**
-     * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+     * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.NATRequestOrBuilder getNatRequestOrBuilder();
+    Message.NATRequestOrBuilder getPNATRequestOrBuilder();
 
     /**
-     * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+     * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
      */
-    boolean hasNatCheck();
+    boolean hasPNATCheck();
     /**
-     * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+     * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.NATCheck getNatCheck();
+    Message.NATCheck getPNATCheck();
     /**
-     * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+     * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.NATCheckOrBuilder getNatCheckOrBuilder();
+    Message.NATCheckOrBuilder getPNATCheckOrBuilder();
 
     /**
-     * <code>.botnet_p2p.Message.Join join = 12;</code>
+     * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
      */
-    boolean hasJoin();
+    boolean hasPJoin();
     /**
-     * <code>.botnet_p2p.Message.Join join = 12;</code>
+     * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.Join getJoin();
+    Message.Join getPJoin();
     /**
-     * <code>.botnet_p2p.Message.Join join = 12;</code>
+     * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.JoinOrBuilder getJoinOrBuilder();
+    Message.JoinOrBuilder getPJoinOrBuilder();
 
     /**
-     * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+     * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
      */
-    boolean hasLeave();
+    boolean hasPLeave();
     /**
-     * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+     * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.Leave getLeave();
+    Message.Leave getPLeave();
     /**
-     * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+     * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
      */
-    botnet_p2p.MessageOuterClass.Message.LeaveOrBuilder getLeaveOrBuilder();
+    Message.LeaveOrBuilder getPLeaveOrBuilder();
 
-    public botnet_p2p.MessageOuterClass.Message.PayloadCase getPayloadCase();
+    public Message.PayloadCase getPayloadCase();
   }
   /**
    * Protobuf type {@code botnet_p2p.Message}
@@ -181,7 +181,7 @@ public final class MessageOuterClass {
       signature_ = com.google.protobuf.ByteString.EMPTY;
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -192,7 +192,7 @@ public final class MessageOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -213,7 +213,7 @@ public final class MessageOuterClass {
               break;
             }
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               uuid_ = s;
               break;
@@ -225,13 +225,13 @@ public final class MessageOuterClass {
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               sender_ = s;
               break;
             }
             case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               receiver_ = s;
               break;
@@ -247,98 +247,98 @@ public final class MessageOuterClass {
               break;
             }
             case 58: {
-              botnet_p2p.MessageOuterClass.Message.Command.Builder subBuilder = null;
+              Command.Builder subBuilder = null;
               if (payloadCase_ == 7) {
-                subBuilder = ((botnet_p2p.MessageOuterClass.Message.Command) payload_).toBuilder();
+                subBuilder = ((Command) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(botnet_p2p.MessageOuterClass.Message.Command.parser(), extensionRegistry);
+                  input.readMessage(Command.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((botnet_p2p.MessageOuterClass.Message.Command) payload_);
+                subBuilder.mergeFrom((Command) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 7;
               break;
             }
             case 66: {
-              botnet_p2p.MessageOuterClass.Message.Response.Builder subBuilder = null;
+              Response.Builder subBuilder = null;
               if (payloadCase_ == 8) {
-                subBuilder = ((botnet_p2p.MessageOuterClass.Message.Response) payload_).toBuilder();
+                subBuilder = ((Response) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(botnet_p2p.MessageOuterClass.Message.Response.parser(), extensionRegistry);
+                  input.readMessage(Response.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((botnet_p2p.MessageOuterClass.Message.Response) payload_);
+                subBuilder.mergeFrom((Response) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 8;
               break;
             }
             case 74: {
-              botnet_p2p.MessageOuterClass.Message.FileChunk.Builder subBuilder = null;
+              FileChunk.Builder subBuilder = null;
               if (payloadCase_ == 9) {
-                subBuilder = ((botnet_p2p.MessageOuterClass.Message.FileChunk) payload_).toBuilder();
+                subBuilder = ((FileChunk) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(botnet_p2p.MessageOuterClass.Message.FileChunk.parser(), extensionRegistry);
+                  input.readMessage(FileChunk.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((botnet_p2p.MessageOuterClass.Message.FileChunk) payload_);
+                subBuilder.mergeFrom((FileChunk) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 9;
               break;
             }
             case 82: {
-              botnet_p2p.MessageOuterClass.Message.NATRequest.Builder subBuilder = null;
+              NATRequest.Builder subBuilder = null;
               if (payloadCase_ == 10) {
-                subBuilder = ((botnet_p2p.MessageOuterClass.Message.NATRequest) payload_).toBuilder();
+                subBuilder = ((NATRequest) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(botnet_p2p.MessageOuterClass.Message.NATRequest.parser(), extensionRegistry);
+                  input.readMessage(NATRequest.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((botnet_p2p.MessageOuterClass.Message.NATRequest) payload_);
+                subBuilder.mergeFrom((NATRequest) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 10;
               break;
             }
             case 90: {
-              botnet_p2p.MessageOuterClass.Message.NATCheck.Builder subBuilder = null;
+              NATCheck.Builder subBuilder = null;
               if (payloadCase_ == 11) {
-                subBuilder = ((botnet_p2p.MessageOuterClass.Message.NATCheck) payload_).toBuilder();
+                subBuilder = ((NATCheck) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(botnet_p2p.MessageOuterClass.Message.NATCheck.parser(), extensionRegistry);
+                  input.readMessage(NATCheck.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((botnet_p2p.MessageOuterClass.Message.NATCheck) payload_);
+                subBuilder.mergeFrom((NATCheck) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 11;
               break;
             }
             case 98: {
-              botnet_p2p.MessageOuterClass.Message.Join.Builder subBuilder = null;
+              Join.Builder subBuilder = null;
               if (payloadCase_ == 12) {
-                subBuilder = ((botnet_p2p.MessageOuterClass.Message.Join) payload_).toBuilder();
+                subBuilder = ((Join) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(botnet_p2p.MessageOuterClass.Message.Join.parser(), extensionRegistry);
+                  input.readMessage(Join.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((botnet_p2p.MessageOuterClass.Message.Join) payload_);
+                subBuilder.mergeFrom((Join) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 12;
               break;
             }
             case 106: {
-              botnet_p2p.MessageOuterClass.Message.Leave.Builder subBuilder = null;
+              Leave.Builder subBuilder = null;
               if (payloadCase_ == 13) {
-                subBuilder = ((botnet_p2p.MessageOuterClass.Message.Leave) payload_).toBuilder();
+                subBuilder = ((Leave) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(botnet_p2p.MessageOuterClass.Message.Leave.parser(), extensionRegistry);
+                  input.readMessage(Leave.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((botnet_p2p.MessageOuterClass.Message.Leave) payload_);
+                subBuilder.mergeFrom((Leave) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 13;
@@ -358,14 +358,14 @@ public final class MessageOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_descriptor;
+      return MessageOuterClass.internal_static_botnet_p2p_Message_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_fieldAccessorTable
+      return MessageOuterClass.internal_static_botnet_p2p_Message_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              botnet_p2p.MessageOuterClass.Message.class, botnet_p2p.MessageOuterClass.Message.Builder.class);
+              Message.class, Builder.class);
     }
 
     /**
@@ -452,7 +452,7 @@ public final class MessageOuterClass {
 
       public final int getNumber() {
         if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
+          throw new IllegalArgumentException(
               "Can't get the number of an unknown enum value.");
         }
         return value;
@@ -461,7 +461,7 @@ public final class MessageOuterClass {
       /**
        * @deprecated Use {@link #forNumber(int)} instead.
        */
-      @java.lang.Deprecated
+      @Deprecated
       public static MessageType valueOf(int value) {
         return forNumber(value);
       }
@@ -503,7 +503,7 @@ public final class MessageOuterClass {
       }
       public static final com.google.protobuf.Descriptors.EnumDescriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.Message.getDescriptor().getEnumTypes().get(0);
+        return Message.getDescriptor().getEnumTypes().get(0);
       }
 
       private static final MessageType[] VALUES = values();
@@ -511,7 +511,7 @@ public final class MessageOuterClass {
       public static MessageType valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
+          throw new IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
         if (desc.getIndex() == -1) {
@@ -557,7 +557,7 @@ public final class MessageOuterClass {
 
       public final int getNumber() {
         if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
+          throw new IllegalArgumentException(
               "Can't get the number of an unknown enum value.");
         }
         return value;
@@ -566,7 +566,7 @@ public final class MessageOuterClass {
       /**
        * @deprecated Use {@link #forNumber(int)} instead.
        */
-      @java.lang.Deprecated
+      @Deprecated
       public static Status valueOf(int value) {
         return forNumber(value);
       }
@@ -601,7 +601,7 @@ public final class MessageOuterClass {
       }
       public static final com.google.protobuf.Descriptors.EnumDescriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.Message.getDescriptor().getEnumTypes().get(1);
+        return Message.getDescriptor().getEnumTypes().get(1);
       }
 
       private static final Status[] VALUES = values();
@@ -609,7 +609,7 @@ public final class MessageOuterClass {
       public static Status valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
+          throw new IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
         if (desc.getIndex() == -1) {
@@ -632,14 +632,14 @@ public final class MessageOuterClass {
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>string command = 1;</code>
+       * <code>string commandString = 1;</code>
        */
-      java.lang.String getCommand();
+      String getCommandString();
       /**
-       * <code>string command = 1;</code>
+       * <code>string commandString = 1;</code>
        */
       com.google.protobuf.ByteString
-          getCommandBytes();
+          getCommandStringBytes();
 
       /**
        * <code>bool sendResponse = 2;</code>
@@ -659,11 +659,11 @@ public final class MessageOuterClass {
         super(builder);
       }
       private Command() {
-        command_ = "";
+        commandString_ = "";
         sendResponse_ = false;
       }
 
-      @java.lang.Override
+      @Override
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
@@ -674,7 +674,7 @@ public final class MessageOuterClass {
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -695,9 +695,9 @@ public final class MessageOuterClass {
                 break;
               }
               case 10: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
 
-                command_ = s;
+                commandString_ = s;
                 break;
               }
               case 16: {
@@ -719,44 +719,44 @@ public final class MessageOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Command_descriptor;
+        return MessageOuterClass.internal_static_botnet_p2p_Message_Command_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Command_fieldAccessorTable
+        return MessageOuterClass.internal_static_botnet_p2p_Message_Command_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                botnet_p2p.MessageOuterClass.Message.Command.class, botnet_p2p.MessageOuterClass.Message.Command.Builder.class);
+                Command.class, Builder.class);
       }
 
-      public static final int COMMAND_FIELD_NUMBER = 1;
-      private volatile java.lang.Object command_;
+      public static final int COMMANDSTRING_FIELD_NUMBER = 1;
+      private volatile Object commandString_;
       /**
-       * <code>string command = 1;</code>
+       * <code>string commandString = 1;</code>
        */
-      public java.lang.String getCommand() {
-        java.lang.Object ref = command_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
+      public String getCommandString() {
+        Object ref = commandString_;
+        if (ref instanceof String) {
+          return (String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          command_ = s;
+          String s = bs.toStringUtf8();
+          commandString_ = s;
           return s;
         }
       }
       /**
-       * <code>string command = 1;</code>
+       * <code>string commandString = 1;</code>
        */
       public com.google.protobuf.ByteString
-          getCommandBytes() {
-        java.lang.Object ref = command_;
-        if (ref instanceof java.lang.String) {
+          getCommandStringBytes() {
+        Object ref = commandString_;
+        if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          command_ = b;
+                  (String) ref);
+          commandString_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
@@ -784,8 +784,8 @@ public final class MessageOuterClass {
 
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (!getCommandBytes().isEmpty()) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 1, command_);
+        if (!getCommandStringBytes().isEmpty()) {
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 1, commandString_);
         }
         if (sendResponse_ != false) {
           output.writeBool(2, sendResponse_);
@@ -798,8 +798,8 @@ public final class MessageOuterClass {
         if (size != -1) return size;
 
         size = 0;
-        if (!getCommandBytes().isEmpty()) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, command_);
+        if (!getCommandStringBytes().isEmpty()) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, commandString_);
         }
         if (sendResponse_ != false) {
           size += com.google.protobuf.CodedOutputStream
@@ -810,34 +810,34 @@ public final class MessageOuterClass {
         return size;
       }
 
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
+      @Override
+      public boolean equals(final Object obj) {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof botnet_p2p.MessageOuterClass.Message.Command)) {
+        if (!(obj instanceof Command)) {
           return super.equals(obj);
         }
-        botnet_p2p.MessageOuterClass.Message.Command other = (botnet_p2p.MessageOuterClass.Message.Command) obj;
+        Command other = (Command) obj;
 
         boolean result = true;
-        result = result && getCommand()
-            .equals(other.getCommand());
+        result = result && getCommandString()
+            .equals(other.getCommandString());
         result = result && (getSendResponse()
             == other.getSendResponse());
         result = result && unknownFields.equals(other.unknownFields);
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
         }
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
-        hash = (37 * hash) + COMMAND_FIELD_NUMBER;
-        hash = (53 * hash) + getCommand().hashCode();
+        hash = (37 * hash) + COMMANDSTRING_FIELD_NUMBER;
+        hash = (53 * hash) + getCommandString().hashCode();
         hash = (37 * hash) + SENDRESPONSE_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
             getSendResponse());
@@ -846,69 +846,69 @@ public final class MessageOuterClass {
         return hash;
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(
+      public static Command parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(
+      public static Command parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(
+      public static Command parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(
+      public static Command parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(byte[] data)
+      public static Command parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(
+      public static Command parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(java.io.InputStream input)
+      public static Command parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(
+      public static Command parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseDelimitedFrom(java.io.InputStream input)
+      public static Command parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseDelimitedFrom(
+      public static Command parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(
+      public static Command parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Command parseFrom(
+      public static Command parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -920,7 +920,7 @@ public final class MessageOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(botnet_p2p.MessageOuterClass.Message.Command prototype) {
+      public static Builder newBuilder(Command prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() {
@@ -928,9 +928,9 @@ public final class MessageOuterClass {
             ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @java.lang.Override
+      @Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -940,17 +940,17 @@ public final class MessageOuterClass {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:botnet_p2p.Message.Command)
-          botnet_p2p.MessageOuterClass.Message.CommandOrBuilder {
+          CommandOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Command_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Command_descriptor;
         }
 
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Command_fieldAccessorTable
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Command_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  botnet_p2p.MessageOuterClass.Message.Command.class, botnet_p2p.MessageOuterClass.Message.Command.Builder.class);
+                  Command.class, Builder.class);
         }
 
         // Construct using botnet_p2p.MessageOuterClass.Message.Command.newBuilder()
@@ -959,7 +959,7 @@ public final class MessageOuterClass {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -970,7 +970,7 @@ public final class MessageOuterClass {
         }
         public Builder clear() {
           super.clear();
-          command_ = "";
+          commandString_ = "";
 
           sendResponse_ = false;
 
@@ -979,24 +979,24 @@ public final class MessageOuterClass {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Command_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Command_descriptor;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Command getDefaultInstanceForType() {
-          return botnet_p2p.MessageOuterClass.Message.Command.getDefaultInstance();
+        public Command getDefaultInstanceForType() {
+          return Command.getDefaultInstance();
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Command build() {
-          botnet_p2p.MessageOuterClass.Message.Command result = buildPartial();
+        public Command build() {
+          Command result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Command buildPartial() {
-          botnet_p2p.MessageOuterClass.Message.Command result = new botnet_p2p.MessageOuterClass.Message.Command(this);
-          result.command_ = command_;
+        public Command buildPartial() {
+          Command result = new Command(this);
+          result.commandString_ = commandString_;
           result.sendResponse_ = sendResponse_;
           onBuilt();
           return result;
@@ -1007,7 +1007,7 @@ public final class MessageOuterClass {
         }
         public Builder setField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.setField(field, value);
         }
         public Builder clearField(
@@ -1020,27 +1020,27 @@ public final class MessageOuterClass {
         }
         public Builder setRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+            int index, Object value) {
           return (Builder) super.setRepeatedField(field, index, value);
         }
         public Builder addRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.addRepeatedField(field, value);
         }
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof botnet_p2p.MessageOuterClass.Message.Command) {
-            return mergeFrom((botnet_p2p.MessageOuterClass.Message.Command)other);
+          if (other instanceof Command) {
+            return mergeFrom((Command)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(botnet_p2p.MessageOuterClass.Message.Command other) {
-          if (other == botnet_p2p.MessageOuterClass.Message.Command.getDefaultInstance()) return this;
-          if (!other.getCommand().isEmpty()) {
-            command_ = other.command_;
+        public Builder mergeFrom(Command other) {
+          if (other == Command.getDefaultInstance()) return this;
+          if (!other.getCommandString().isEmpty()) {
+            commandString_ = other.commandString_;
             onChanged();
           }
           if (other.getSendResponse() != false) {
@@ -1059,11 +1059,11 @@ public final class MessageOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          botnet_p2p.MessageOuterClass.Message.Command parsedMessage = null;
+          Command parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (botnet_p2p.MessageOuterClass.Message.Command) e.getUnfinishedMessage();
+            parsedMessage = (Command) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -1073,71 +1073,71 @@ public final class MessageOuterClass {
           return this;
         }
 
-        private java.lang.Object command_ = "";
+        private Object commandString_ = "";
         /**
-         * <code>string command = 1;</code>
+         * <code>string commandString = 1;</code>
          */
-        public java.lang.String getCommand() {
-          java.lang.Object ref = command_;
-          if (!(ref instanceof java.lang.String)) {
+        public String getCommandString() {
+          Object ref = commandString_;
+          if (!(ref instanceof String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            java.lang.String s = bs.toStringUtf8();
-            command_ = s;
+            String s = bs.toStringUtf8();
+            commandString_ = s;
             return s;
           } else {
-            return (java.lang.String) ref;
+            return (String) ref;
           }
         }
         /**
-         * <code>string command = 1;</code>
+         * <code>string commandString = 1;</code>
          */
         public com.google.protobuf.ByteString
-            getCommandBytes() {
-          java.lang.Object ref = command_;
+            getCommandStringBytes() {
+          Object ref = commandString_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
-            command_ = b;
+                    (String) ref);
+            commandString_ = b;
             return b;
           } else {
             return (com.google.protobuf.ByteString) ref;
           }
         }
         /**
-         * <code>string command = 1;</code>
+         * <code>string commandString = 1;</code>
          */
-        public Builder setCommand(
-            java.lang.String value) {
+        public Builder setCommandString(
+            String value) {
           if (value == null) {
     throw new NullPointerException();
   }
   
-          command_ = value;
+          commandString_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>string command = 1;</code>
+         * <code>string commandString = 1;</code>
          */
-        public Builder clearCommand() {
+        public Builder clearCommandString() {
           
-          command_ = getDefaultInstance().getCommand();
+          commandString_ = getDefaultInstance().getCommandString();
           onChanged();
           return this;
         }
         /**
-         * <code>string command = 1;</code>
+         * <code>string commandString = 1;</code>
          */
-        public Builder setCommandBytes(
+        public Builder setCommandStringBytes(
             com.google.protobuf.ByteString value) {
           if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
           
-          command_ = value;
+          commandString_ = value;
           onChanged();
           return this;
         }
@@ -1182,12 +1182,12 @@ public final class MessageOuterClass {
       }
 
       // @@protoc_insertion_point(class_scope:botnet_p2p.Message.Command)
-      private static final botnet_p2p.MessageOuterClass.Message.Command DEFAULT_INSTANCE;
+      private static final Command DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new botnet_p2p.MessageOuterClass.Message.Command();
+        DEFAULT_INSTANCE = new Command();
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.Command getDefaultInstance() {
+      public static Command getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -1205,12 +1205,12 @@ public final class MessageOuterClass {
         return PARSER;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Parser<Command> getParserForType() {
         return PARSER;
       }
 
-      public botnet_p2p.MessageOuterClass.Message.Command getDefaultInstanceForType() {
+      public Command getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -1223,7 +1223,7 @@ public final class MessageOuterClass {
       /**
        * <code>string value = 1;</code>
        */
-      java.lang.String getValue();
+      String getValue();
       /**
        * <code>string value = 1;</code>
        */
@@ -1237,7 +1237,7 @@ public final class MessageOuterClass {
       /**
        * <code>.botnet_p2p.Message.Status status = 2;</code>
        */
-      botnet_p2p.MessageOuterClass.Message.Status getStatus();
+      Status getStatus();
     }
     /**
      * Protobuf type {@code botnet_p2p.Message.Response}
@@ -1256,7 +1256,7 @@ public final class MessageOuterClass {
         status_ = 0;
       }
 
-      @java.lang.Override
+      @Override
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
@@ -1267,7 +1267,7 @@ public final class MessageOuterClass {
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -1288,7 +1288,7 @@ public final class MessageOuterClass {
                 break;
               }
               case 10: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
 
                 value_ = s;
                 break;
@@ -1313,29 +1313,29 @@ public final class MessageOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Response_descriptor;
+        return MessageOuterClass.internal_static_botnet_p2p_Message_Response_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Response_fieldAccessorTable
+        return MessageOuterClass.internal_static_botnet_p2p_Message_Response_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                botnet_p2p.MessageOuterClass.Message.Response.class, botnet_p2p.MessageOuterClass.Message.Response.Builder.class);
+                Response.class, Builder.class);
       }
 
       public static final int VALUE_FIELD_NUMBER = 1;
-      private volatile java.lang.Object value_;
+      private volatile Object value_;
       /**
        * <code>string value = 1;</code>
        */
-      public java.lang.String getValue() {
-        java.lang.Object ref = value_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
+      public String getValue() {
+        Object ref = value_;
+        if (ref instanceof String) {
+          return (String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           value_ = s;
           return s;
         }
@@ -1345,11 +1345,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getValueBytes() {
-        java.lang.Object ref = value_;
-        if (ref instanceof java.lang.String) {
+        Object ref = value_;
+        if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           value_ = b;
           return b;
         } else {
@@ -1368,9 +1368,9 @@ public final class MessageOuterClass {
       /**
        * <code>.botnet_p2p.Message.Status status = 2;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.Status getStatus() {
-        botnet_p2p.MessageOuterClass.Message.Status result = botnet_p2p.MessageOuterClass.Message.Status.valueOf(status_);
-        return result == null ? botnet_p2p.MessageOuterClass.Message.Status.UNRECOGNIZED : result;
+      public Status getStatus() {
+        Status result = Status.valueOf(status_);
+        return result == null ? Status.UNRECOGNIZED : result;
       }
 
       private byte memoizedIsInitialized = -1;
@@ -1388,7 +1388,7 @@ public final class MessageOuterClass {
         if (!getValueBytes().isEmpty()) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, value_);
         }
-        if (status_ != botnet_p2p.MessageOuterClass.Message.Status.FAIL.getNumber()) {
+        if (status_ != Status.FAIL.getNumber()) {
           output.writeEnum(2, status_);
         }
         unknownFields.writeTo(output);
@@ -1402,7 +1402,7 @@ public final class MessageOuterClass {
         if (!getValueBytes().isEmpty()) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, value_);
         }
-        if (status_ != botnet_p2p.MessageOuterClass.Message.Status.FAIL.getNumber()) {
+        if (status_ != Status.FAIL.getNumber()) {
           size += com.google.protobuf.CodedOutputStream
             .computeEnumSize(2, status_);
         }
@@ -1411,15 +1411,15 @@ public final class MessageOuterClass {
         return size;
       }
 
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
+      @Override
+      public boolean equals(final Object obj) {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof botnet_p2p.MessageOuterClass.Message.Response)) {
+        if (!(obj instanceof Response)) {
           return super.equals(obj);
         }
-        botnet_p2p.MessageOuterClass.Message.Response other = (botnet_p2p.MessageOuterClass.Message.Response) obj;
+        Response other = (Response) obj;
 
         boolean result = true;
         result = result && getValue()
@@ -1429,7 +1429,7 @@ public final class MessageOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
@@ -1445,69 +1445,69 @@ public final class MessageOuterClass {
         return hash;
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(
+      public static Response parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(
+      public static Response parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(
+      public static Response parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(
+      public static Response parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(byte[] data)
+      public static Response parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(
+      public static Response parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(java.io.InputStream input)
+      public static Response parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(
+      public static Response parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseDelimitedFrom(java.io.InputStream input)
+      public static Response parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseDelimitedFrom(
+      public static Response parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(
+      public static Response parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Response parseFrom(
+      public static Response parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -1519,7 +1519,7 @@ public final class MessageOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(botnet_p2p.MessageOuterClass.Message.Response prototype) {
+      public static Builder newBuilder(Response prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() {
@@ -1527,9 +1527,9 @@ public final class MessageOuterClass {
             ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @java.lang.Override
+      @Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -1539,17 +1539,17 @@ public final class MessageOuterClass {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:botnet_p2p.Message.Response)
-          botnet_p2p.MessageOuterClass.Message.ResponseOrBuilder {
+          ResponseOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Response_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Response_descriptor;
         }
 
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Response_fieldAccessorTable
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Response_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  botnet_p2p.MessageOuterClass.Message.Response.class, botnet_p2p.MessageOuterClass.Message.Response.Builder.class);
+                  Response.class, Builder.class);
         }
 
         // Construct using botnet_p2p.MessageOuterClass.Message.Response.newBuilder()
@@ -1558,7 +1558,7 @@ public final class MessageOuterClass {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -1578,23 +1578,23 @@ public final class MessageOuterClass {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Response_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Response_descriptor;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Response getDefaultInstanceForType() {
-          return botnet_p2p.MessageOuterClass.Message.Response.getDefaultInstance();
+        public Response getDefaultInstanceForType() {
+          return Response.getDefaultInstance();
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Response build() {
-          botnet_p2p.MessageOuterClass.Message.Response result = buildPartial();
+        public Response build() {
+          Response result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Response buildPartial() {
-          botnet_p2p.MessageOuterClass.Message.Response result = new botnet_p2p.MessageOuterClass.Message.Response(this);
+        public Response buildPartial() {
+          Response result = new Response(this);
           result.value_ = value_;
           result.status_ = status_;
           onBuilt();
@@ -1606,7 +1606,7 @@ public final class MessageOuterClass {
         }
         public Builder setField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.setField(field, value);
         }
         public Builder clearField(
@@ -1619,25 +1619,25 @@ public final class MessageOuterClass {
         }
         public Builder setRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+            int index, Object value) {
           return (Builder) super.setRepeatedField(field, index, value);
         }
         public Builder addRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.addRepeatedField(field, value);
         }
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof botnet_p2p.MessageOuterClass.Message.Response) {
-            return mergeFrom((botnet_p2p.MessageOuterClass.Message.Response)other);
+          if (other instanceof Response) {
+            return mergeFrom((Response)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(botnet_p2p.MessageOuterClass.Message.Response other) {
-          if (other == botnet_p2p.MessageOuterClass.Message.Response.getDefaultInstance()) return this;
+        public Builder mergeFrom(Response other) {
+          if (other == Response.getDefaultInstance()) return this;
           if (!other.getValue().isEmpty()) {
             value_ = other.value_;
             onChanged();
@@ -1658,11 +1658,11 @@ public final class MessageOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          botnet_p2p.MessageOuterClass.Message.Response parsedMessage = null;
+          Response parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (botnet_p2p.MessageOuterClass.Message.Response) e.getUnfinishedMessage();
+            parsedMessage = (Response) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -1672,20 +1672,20 @@ public final class MessageOuterClass {
           return this;
         }
 
-        private java.lang.Object value_ = "";
+        private Object value_ = "";
         /**
          * <code>string value = 1;</code>
          */
-        public java.lang.String getValue() {
-          java.lang.Object ref = value_;
-          if (!(ref instanceof java.lang.String)) {
+        public String getValue() {
+          Object ref = value_;
+          if (!(ref instanceof String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            java.lang.String s = bs.toStringUtf8();
+            String s = bs.toStringUtf8();
             value_ = s;
             return s;
           } else {
-            return (java.lang.String) ref;
+            return (String) ref;
           }
         }
         /**
@@ -1693,11 +1693,11 @@ public final class MessageOuterClass {
          */
         public com.google.protobuf.ByteString
             getValueBytes() {
-          java.lang.Object ref = value_;
+          Object ref = value_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
+                    (String) ref);
             value_ = b;
             return b;
           } else {
@@ -1708,7 +1708,7 @@ public final class MessageOuterClass {
          * <code>string value = 1;</code>
          */
         public Builder setValue(
-            java.lang.String value) {
+            String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -1759,14 +1759,14 @@ public final class MessageOuterClass {
         /**
          * <code>.botnet_p2p.Message.Status status = 2;</code>
          */
-        public botnet_p2p.MessageOuterClass.Message.Status getStatus() {
-          botnet_p2p.MessageOuterClass.Message.Status result = botnet_p2p.MessageOuterClass.Message.Status.valueOf(status_);
-          return result == null ? botnet_p2p.MessageOuterClass.Message.Status.UNRECOGNIZED : result;
+        public Status getStatus() {
+          Status result = Status.valueOf(status_);
+          return result == null ? Status.UNRECOGNIZED : result;
         }
         /**
          * <code>.botnet_p2p.Message.Status status = 2;</code>
          */
-        public Builder setStatus(botnet_p2p.MessageOuterClass.Message.Status value) {
+        public Builder setStatus(Status value) {
           if (value == null) {
             throw new NullPointerException();
           }
@@ -1799,12 +1799,12 @@ public final class MessageOuterClass {
       }
 
       // @@protoc_insertion_point(class_scope:botnet_p2p.Message.Response)
-      private static final botnet_p2p.MessageOuterClass.Message.Response DEFAULT_INSTANCE;
+      private static final Response DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new botnet_p2p.MessageOuterClass.Message.Response();
+        DEFAULT_INSTANCE = new Response();
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.Response getDefaultInstance() {
+      public static Response getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -1822,12 +1822,12 @@ public final class MessageOuterClass {
         return PARSER;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Parser<Response> getParserForType() {
         return PARSER;
       }
 
-      public botnet_p2p.MessageOuterClass.Message.Response getDefaultInstanceForType() {
+      public Response getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -1840,7 +1840,7 @@ public final class MessageOuterClass {
       /**
        * <code>string path = 1;</code>
        */
-      java.lang.String getPath();
+      String getPath();
       /**
        * <code>string path = 1;</code>
        */
@@ -1893,7 +1893,7 @@ public final class MessageOuterClass {
         data_ = com.google.protobuf.ByteString.EMPTY;
       }
 
-      @java.lang.Override
+      @Override
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
@@ -1904,7 +1904,7 @@ public final class MessageOuterClass {
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -1925,7 +1925,7 @@ public final class MessageOuterClass {
                 break;
               }
               case 10: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
 
                 path_ = s;
                 break;
@@ -1969,29 +1969,29 @@ public final class MessageOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_descriptor;
+        return MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_fieldAccessorTable
+        return MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                botnet_p2p.MessageOuterClass.Message.FileChunk.class, botnet_p2p.MessageOuterClass.Message.FileChunk.Builder.class);
+                FileChunk.class, Builder.class);
       }
 
       public static final int PATH_FIELD_NUMBER = 1;
-      private volatile java.lang.Object path_;
+      private volatile Object path_;
       /**
        * <code>string path = 1;</code>
        */
-      public java.lang.String getPath() {
-        java.lang.Object ref = path_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
+      public String getPath() {
+        Object ref = path_;
+        if (ref instanceof String) {
+          return (String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           path_ = s;
           return s;
         }
@@ -2001,11 +2001,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getPathBytes() {
-        java.lang.Object ref = path_;
-        if (ref instanceof java.lang.String) {
+        Object ref = path_;
+        if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           path_ = b;
           return b;
         } else {
@@ -2124,15 +2124,15 @@ public final class MessageOuterClass {
         return size;
       }
 
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
+      @Override
+      public boolean equals(final Object obj) {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof botnet_p2p.MessageOuterClass.Message.FileChunk)) {
+        if (!(obj instanceof FileChunk)) {
           return super.equals(obj);
         }
-        botnet_p2p.MessageOuterClass.Message.FileChunk other = (botnet_p2p.MessageOuterClass.Message.FileChunk) obj;
+        FileChunk other = (FileChunk) obj;
 
         boolean result = true;
         result = result && getPath()
@@ -2151,7 +2151,7 @@ public final class MessageOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
@@ -2176,69 +2176,69 @@ public final class MessageOuterClass {
         return hash;
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(
+      public static FileChunk parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(
+      public static FileChunk parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(
+      public static FileChunk parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(
+      public static FileChunk parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(byte[] data)
+      public static FileChunk parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(
+      public static FileChunk parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(java.io.InputStream input)
+      public static FileChunk parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(
+      public static FileChunk parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseDelimitedFrom(java.io.InputStream input)
+      public static FileChunk parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseDelimitedFrom(
+      public static FileChunk parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(
+      public static FileChunk parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk parseFrom(
+      public static FileChunk parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -2250,7 +2250,7 @@ public final class MessageOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(botnet_p2p.MessageOuterClass.Message.FileChunk prototype) {
+      public static Builder newBuilder(FileChunk prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() {
@@ -2258,9 +2258,9 @@ public final class MessageOuterClass {
             ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @java.lang.Override
+      @Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -2270,17 +2270,17 @@ public final class MessageOuterClass {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:botnet_p2p.Message.FileChunk)
-          botnet_p2p.MessageOuterClass.Message.FileChunkOrBuilder {
+          FileChunkOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_descriptor;
         }
 
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_fieldAccessorTable
+          return MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  botnet_p2p.MessageOuterClass.Message.FileChunk.class, botnet_p2p.MessageOuterClass.Message.FileChunk.Builder.class);
+                  FileChunk.class, Builder.class);
         }
 
         // Construct using botnet_p2p.MessageOuterClass.Message.FileChunk.newBuilder()
@@ -2289,7 +2289,7 @@ public final class MessageOuterClass {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -2317,23 +2317,23 @@ public final class MessageOuterClass {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_FileChunk_descriptor;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.FileChunk getDefaultInstanceForType() {
-          return botnet_p2p.MessageOuterClass.Message.FileChunk.getDefaultInstance();
+        public FileChunk getDefaultInstanceForType() {
+          return FileChunk.getDefaultInstance();
         }
 
-        public botnet_p2p.MessageOuterClass.Message.FileChunk build() {
-          botnet_p2p.MessageOuterClass.Message.FileChunk result = buildPartial();
+        public FileChunk build() {
+          FileChunk result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.FileChunk buildPartial() {
-          botnet_p2p.MessageOuterClass.Message.FileChunk result = new botnet_p2p.MessageOuterClass.Message.FileChunk(this);
+        public FileChunk buildPartial() {
+          FileChunk result = new FileChunk(this);
           result.path_ = path_;
           result.name_ = name_;
           result.chunkNumber_ = chunkNumber_;
@@ -2349,7 +2349,7 @@ public final class MessageOuterClass {
         }
         public Builder setField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.setField(field, value);
         }
         public Builder clearField(
@@ -2362,25 +2362,25 @@ public final class MessageOuterClass {
         }
         public Builder setRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+            int index, Object value) {
           return (Builder) super.setRepeatedField(field, index, value);
         }
         public Builder addRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.addRepeatedField(field, value);
         }
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof botnet_p2p.MessageOuterClass.Message.FileChunk) {
-            return mergeFrom((botnet_p2p.MessageOuterClass.Message.FileChunk)other);
+          if (other instanceof FileChunk) {
+            return mergeFrom((FileChunk)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(botnet_p2p.MessageOuterClass.Message.FileChunk other) {
-          if (other == botnet_p2p.MessageOuterClass.Message.FileChunk.getDefaultInstance()) return this;
+        public Builder mergeFrom(FileChunk other) {
+          if (other == FileChunk.getDefaultInstance()) return this;
           if (!other.getPath().isEmpty()) {
             path_ = other.path_;
             onChanged();
@@ -2413,11 +2413,11 @@ public final class MessageOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          botnet_p2p.MessageOuterClass.Message.FileChunk parsedMessage = null;
+          FileChunk parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (botnet_p2p.MessageOuterClass.Message.FileChunk) e.getUnfinishedMessage();
+            parsedMessage = (FileChunk) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -2427,20 +2427,20 @@ public final class MessageOuterClass {
           return this;
         }
 
-        private java.lang.Object path_ = "";
+        private Object path_ = "";
         /**
          * <code>string path = 1;</code>
          */
-        public java.lang.String getPath() {
-          java.lang.Object ref = path_;
-          if (!(ref instanceof java.lang.String)) {
+        public String getPath() {
+          Object ref = path_;
+          if (!(ref instanceof String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            java.lang.String s = bs.toStringUtf8();
+            String s = bs.toStringUtf8();
             path_ = s;
             return s;
           } else {
-            return (java.lang.String) ref;
+            return (String) ref;
           }
         }
         /**
@@ -2448,11 +2448,11 @@ public final class MessageOuterClass {
          */
         public com.google.protobuf.ByteString
             getPathBytes() {
-          java.lang.Object ref = path_;
+          Object ref = path_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
+                    (String) ref);
             path_ = b;
             return b;
           } else {
@@ -2463,7 +2463,7 @@ public final class MessageOuterClass {
          * <code>string path = 1;</code>
          */
         public Builder setPath(
-            java.lang.String value) {
+            String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2643,12 +2643,12 @@ public final class MessageOuterClass {
       }
 
       // @@protoc_insertion_point(class_scope:botnet_p2p.Message.FileChunk)
-      private static final botnet_p2p.MessageOuterClass.Message.FileChunk DEFAULT_INSTANCE;
+      private static final FileChunk DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new botnet_p2p.MessageOuterClass.Message.FileChunk();
+        DEFAULT_INSTANCE = new FileChunk();
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.FileChunk getDefaultInstance() {
+      public static FileChunk getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -2666,12 +2666,12 @@ public final class MessageOuterClass {
         return PARSER;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Parser<FileChunk> getParserForType() {
         return PARSER;
       }
 
-      public botnet_p2p.MessageOuterClass.Message.FileChunk getDefaultInstanceForType() {
+      public FileChunk getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -2684,7 +2684,7 @@ public final class MessageOuterClass {
       /**
        * <code>string target = 1;</code>
        */
-      java.lang.String getTarget();
+      String getTarget();
       /**
        * <code>string target = 1;</code>
        */
@@ -2707,7 +2707,7 @@ public final class MessageOuterClass {
         target_ = "";
       }
 
-      @java.lang.Override
+      @Override
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
@@ -2718,7 +2718,7 @@ public final class MessageOuterClass {
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -2739,7 +2739,7 @@ public final class MessageOuterClass {
                 break;
               }
               case 10: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
 
                 target_ = s;
                 break;
@@ -2758,29 +2758,29 @@ public final class MessageOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_descriptor;
+        return MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_fieldAccessorTable
+        return MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                botnet_p2p.MessageOuterClass.Message.NATRequest.class, botnet_p2p.MessageOuterClass.Message.NATRequest.Builder.class);
+                NATRequest.class, Builder.class);
       }
 
       public static final int TARGET_FIELD_NUMBER = 1;
-      private volatile java.lang.Object target_;
+      private volatile Object target_;
       /**
        * <code>string target = 1;</code>
        */
-      public java.lang.String getTarget() {
-        java.lang.Object ref = target_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
+      public String getTarget() {
+        Object ref = target_;
+        if (ref instanceof String) {
+          return (String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           target_ = s;
           return s;
         }
@@ -2790,11 +2790,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getTargetBytes() {
-        java.lang.Object ref = target_;
-        if (ref instanceof java.lang.String) {
+        Object ref = target_;
+        if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           target_ = b;
           return b;
         } else {
@@ -2833,15 +2833,15 @@ public final class MessageOuterClass {
         return size;
       }
 
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
+      @Override
+      public boolean equals(final Object obj) {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof botnet_p2p.MessageOuterClass.Message.NATRequest)) {
+        if (!(obj instanceof NATRequest)) {
           return super.equals(obj);
         }
-        botnet_p2p.MessageOuterClass.Message.NATRequest other = (botnet_p2p.MessageOuterClass.Message.NATRequest) obj;
+        NATRequest other = (NATRequest) obj;
 
         boolean result = true;
         result = result && getTarget()
@@ -2850,7 +2850,7 @@ public final class MessageOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
@@ -2864,69 +2864,69 @@ public final class MessageOuterClass {
         return hash;
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(
+      public static NATRequest parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(
+      public static NATRequest parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(
+      public static NATRequest parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(
+      public static NATRequest parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(byte[] data)
+      public static NATRequest parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(
+      public static NATRequest parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(java.io.InputStream input)
+      public static NATRequest parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(
+      public static NATRequest parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseDelimitedFrom(java.io.InputStream input)
+      public static NATRequest parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseDelimitedFrom(
+      public static NATRequest parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(
+      public static NATRequest parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest parseFrom(
+      public static NATRequest parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -2938,7 +2938,7 @@ public final class MessageOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(botnet_p2p.MessageOuterClass.Message.NATRequest prototype) {
+      public static Builder newBuilder(NATRequest prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() {
@@ -2946,9 +2946,9 @@ public final class MessageOuterClass {
             ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @java.lang.Override
+      @Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -2958,17 +2958,17 @@ public final class MessageOuterClass {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:botnet_p2p.Message.NATRequest)
-          botnet_p2p.MessageOuterClass.Message.NATRequestOrBuilder {
+          NATRequestOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_descriptor;
         }
 
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_fieldAccessorTable
+          return MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  botnet_p2p.MessageOuterClass.Message.NATRequest.class, botnet_p2p.MessageOuterClass.Message.NATRequest.Builder.class);
+                  NATRequest.class, Builder.class);
         }
 
         // Construct using botnet_p2p.MessageOuterClass.Message.NATRequest.newBuilder()
@@ -2977,7 +2977,7 @@ public final class MessageOuterClass {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -2995,23 +2995,23 @@ public final class MessageOuterClass {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_NATRequest_descriptor;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.NATRequest getDefaultInstanceForType() {
-          return botnet_p2p.MessageOuterClass.Message.NATRequest.getDefaultInstance();
+        public NATRequest getDefaultInstanceForType() {
+          return NATRequest.getDefaultInstance();
         }
 
-        public botnet_p2p.MessageOuterClass.Message.NATRequest build() {
-          botnet_p2p.MessageOuterClass.Message.NATRequest result = buildPartial();
+        public NATRequest build() {
+          NATRequest result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.NATRequest buildPartial() {
-          botnet_p2p.MessageOuterClass.Message.NATRequest result = new botnet_p2p.MessageOuterClass.Message.NATRequest(this);
+        public NATRequest buildPartial() {
+          NATRequest result = new NATRequest(this);
           result.target_ = target_;
           onBuilt();
           return result;
@@ -3022,7 +3022,7 @@ public final class MessageOuterClass {
         }
         public Builder setField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.setField(field, value);
         }
         public Builder clearField(
@@ -3035,25 +3035,25 @@ public final class MessageOuterClass {
         }
         public Builder setRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+            int index, Object value) {
           return (Builder) super.setRepeatedField(field, index, value);
         }
         public Builder addRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.addRepeatedField(field, value);
         }
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof botnet_p2p.MessageOuterClass.Message.NATRequest) {
-            return mergeFrom((botnet_p2p.MessageOuterClass.Message.NATRequest)other);
+          if (other instanceof NATRequest) {
+            return mergeFrom((NATRequest)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(botnet_p2p.MessageOuterClass.Message.NATRequest other) {
-          if (other == botnet_p2p.MessageOuterClass.Message.NATRequest.getDefaultInstance()) return this;
+        public Builder mergeFrom(NATRequest other) {
+          if (other == NATRequest.getDefaultInstance()) return this;
           if (!other.getTarget().isEmpty()) {
             target_ = other.target_;
             onChanged();
@@ -3071,11 +3071,11 @@ public final class MessageOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          botnet_p2p.MessageOuterClass.Message.NATRequest parsedMessage = null;
+          NATRequest parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (botnet_p2p.MessageOuterClass.Message.NATRequest) e.getUnfinishedMessage();
+            parsedMessage = (NATRequest) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -3085,20 +3085,20 @@ public final class MessageOuterClass {
           return this;
         }
 
-        private java.lang.Object target_ = "";
+        private Object target_ = "";
         /**
          * <code>string target = 1;</code>
          */
-        public java.lang.String getTarget() {
-          java.lang.Object ref = target_;
-          if (!(ref instanceof java.lang.String)) {
+        public String getTarget() {
+          Object ref = target_;
+          if (!(ref instanceof String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            java.lang.String s = bs.toStringUtf8();
+            String s = bs.toStringUtf8();
             target_ = s;
             return s;
           } else {
-            return (java.lang.String) ref;
+            return (String) ref;
           }
         }
         /**
@@ -3106,11 +3106,11 @@ public final class MessageOuterClass {
          */
         public com.google.protobuf.ByteString
             getTargetBytes() {
-          java.lang.Object ref = target_;
+          Object ref = target_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
+                    (String) ref);
             target_ = b;
             return b;
           } else {
@@ -3121,7 +3121,7 @@ public final class MessageOuterClass {
          * <code>string target = 1;</code>
          */
         public Builder setTarget(
-            java.lang.String value) {
+            String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -3168,12 +3168,12 @@ public final class MessageOuterClass {
       }
 
       // @@protoc_insertion_point(class_scope:botnet_p2p.Message.NATRequest)
-      private static final botnet_p2p.MessageOuterClass.Message.NATRequest DEFAULT_INSTANCE;
+      private static final NATRequest DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new botnet_p2p.MessageOuterClass.Message.NATRequest();
+        DEFAULT_INSTANCE = new NATRequest();
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.NATRequest getDefaultInstance() {
+      public static NATRequest getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -3191,12 +3191,12 @@ public final class MessageOuterClass {
         return PARSER;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Parser<NATRequest> getParserForType() {
         return PARSER;
       }
 
-      public botnet_p2p.MessageOuterClass.Message.NATRequest getDefaultInstanceForType() {
+      public NATRequest getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -3209,7 +3209,7 @@ public final class MessageOuterClass {
       /**
        * <code>string source = 1;</code>
        */
-      java.lang.String getSource();
+      String getSource();
       /**
        * <code>string source = 1;</code>
        */
@@ -3232,7 +3232,7 @@ public final class MessageOuterClass {
         source_ = "";
       }
 
-      @java.lang.Override
+      @Override
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
@@ -3243,7 +3243,7 @@ public final class MessageOuterClass {
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -3264,7 +3264,7 @@ public final class MessageOuterClass {
                 break;
               }
               case 10: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
 
                 source_ = s;
                 break;
@@ -3283,29 +3283,29 @@ public final class MessageOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_descriptor;
+        return MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_fieldAccessorTable
+        return MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                botnet_p2p.MessageOuterClass.Message.NATCheck.class, botnet_p2p.MessageOuterClass.Message.NATCheck.Builder.class);
+                NATCheck.class, Builder.class);
       }
 
       public static final int SOURCE_FIELD_NUMBER = 1;
-      private volatile java.lang.Object source_;
+      private volatile Object source_;
       /**
        * <code>string source = 1;</code>
        */
-      public java.lang.String getSource() {
-        java.lang.Object ref = source_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
+      public String getSource() {
+        Object ref = source_;
+        if (ref instanceof String) {
+          return (String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           source_ = s;
           return s;
         }
@@ -3315,11 +3315,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getSourceBytes() {
-        java.lang.Object ref = source_;
-        if (ref instanceof java.lang.String) {
+        Object ref = source_;
+        if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           source_ = b;
           return b;
         } else {
@@ -3358,15 +3358,15 @@ public final class MessageOuterClass {
         return size;
       }
 
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
+      @Override
+      public boolean equals(final Object obj) {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof botnet_p2p.MessageOuterClass.Message.NATCheck)) {
+        if (!(obj instanceof NATCheck)) {
           return super.equals(obj);
         }
-        botnet_p2p.MessageOuterClass.Message.NATCheck other = (botnet_p2p.MessageOuterClass.Message.NATCheck) obj;
+        NATCheck other = (NATCheck) obj;
 
         boolean result = true;
         result = result && getSource()
@@ -3375,7 +3375,7 @@ public final class MessageOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
@@ -3389,69 +3389,69 @@ public final class MessageOuterClass {
         return hash;
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(
+      public static NATCheck parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(
+      public static NATCheck parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(
+      public static NATCheck parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(
+      public static NATCheck parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(byte[] data)
+      public static NATCheck parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(
+      public static NATCheck parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(java.io.InputStream input)
+      public static NATCheck parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(
+      public static NATCheck parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseDelimitedFrom(java.io.InputStream input)
+      public static NATCheck parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseDelimitedFrom(
+      public static NATCheck parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(
+      public static NATCheck parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck parseFrom(
+      public static NATCheck parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -3463,7 +3463,7 @@ public final class MessageOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(botnet_p2p.MessageOuterClass.Message.NATCheck prototype) {
+      public static Builder newBuilder(NATCheck prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() {
@@ -3471,9 +3471,9 @@ public final class MessageOuterClass {
             ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @java.lang.Override
+      @Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -3483,17 +3483,17 @@ public final class MessageOuterClass {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:botnet_p2p.Message.NATCheck)
-          botnet_p2p.MessageOuterClass.Message.NATCheckOrBuilder {
+          NATCheckOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_descriptor;
         }
 
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_fieldAccessorTable
+          return MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  botnet_p2p.MessageOuterClass.Message.NATCheck.class, botnet_p2p.MessageOuterClass.Message.NATCheck.Builder.class);
+                  NATCheck.class, Builder.class);
         }
 
         // Construct using botnet_p2p.MessageOuterClass.Message.NATCheck.newBuilder()
@@ -3502,7 +3502,7 @@ public final class MessageOuterClass {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -3520,23 +3520,23 @@ public final class MessageOuterClass {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_NATCheck_descriptor;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.NATCheck getDefaultInstanceForType() {
-          return botnet_p2p.MessageOuterClass.Message.NATCheck.getDefaultInstance();
+        public NATCheck getDefaultInstanceForType() {
+          return NATCheck.getDefaultInstance();
         }
 
-        public botnet_p2p.MessageOuterClass.Message.NATCheck build() {
-          botnet_p2p.MessageOuterClass.Message.NATCheck result = buildPartial();
+        public NATCheck build() {
+          NATCheck result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.NATCheck buildPartial() {
-          botnet_p2p.MessageOuterClass.Message.NATCheck result = new botnet_p2p.MessageOuterClass.Message.NATCheck(this);
+        public NATCheck buildPartial() {
+          NATCheck result = new NATCheck(this);
           result.source_ = source_;
           onBuilt();
           return result;
@@ -3547,7 +3547,7 @@ public final class MessageOuterClass {
         }
         public Builder setField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.setField(field, value);
         }
         public Builder clearField(
@@ -3560,25 +3560,25 @@ public final class MessageOuterClass {
         }
         public Builder setRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+            int index, Object value) {
           return (Builder) super.setRepeatedField(field, index, value);
         }
         public Builder addRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.addRepeatedField(field, value);
         }
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof botnet_p2p.MessageOuterClass.Message.NATCheck) {
-            return mergeFrom((botnet_p2p.MessageOuterClass.Message.NATCheck)other);
+          if (other instanceof NATCheck) {
+            return mergeFrom((NATCheck)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(botnet_p2p.MessageOuterClass.Message.NATCheck other) {
-          if (other == botnet_p2p.MessageOuterClass.Message.NATCheck.getDefaultInstance()) return this;
+        public Builder mergeFrom(NATCheck other) {
+          if (other == NATCheck.getDefaultInstance()) return this;
           if (!other.getSource().isEmpty()) {
             source_ = other.source_;
             onChanged();
@@ -3596,11 +3596,11 @@ public final class MessageOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          botnet_p2p.MessageOuterClass.Message.NATCheck parsedMessage = null;
+          NATCheck parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (botnet_p2p.MessageOuterClass.Message.NATCheck) e.getUnfinishedMessage();
+            parsedMessage = (NATCheck) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -3610,20 +3610,20 @@ public final class MessageOuterClass {
           return this;
         }
 
-        private java.lang.Object source_ = "";
+        private Object source_ = "";
         /**
          * <code>string source = 1;</code>
          */
-        public java.lang.String getSource() {
-          java.lang.Object ref = source_;
-          if (!(ref instanceof java.lang.String)) {
+        public String getSource() {
+          Object ref = source_;
+          if (!(ref instanceof String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            java.lang.String s = bs.toStringUtf8();
+            String s = bs.toStringUtf8();
             source_ = s;
             return s;
           } else {
-            return (java.lang.String) ref;
+            return (String) ref;
           }
         }
         /**
@@ -3631,11 +3631,11 @@ public final class MessageOuterClass {
          */
         public com.google.protobuf.ByteString
             getSourceBytes() {
-          java.lang.Object ref = source_;
+          Object ref = source_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
+                    (String) ref);
             source_ = b;
             return b;
           } else {
@@ -3646,7 +3646,7 @@ public final class MessageOuterClass {
          * <code>string source = 1;</code>
          */
         public Builder setSource(
-            java.lang.String value) {
+            String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -3693,12 +3693,12 @@ public final class MessageOuterClass {
       }
 
       // @@protoc_insertion_point(class_scope:botnet_p2p.Message.NATCheck)
-      private static final botnet_p2p.MessageOuterClass.Message.NATCheck DEFAULT_INSTANCE;
+      private static final NATCheck DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new botnet_p2p.MessageOuterClass.Message.NATCheck();
+        DEFAULT_INSTANCE = new NATCheck();
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.NATCheck getDefaultInstance() {
+      public static NATCheck getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -3716,12 +3716,12 @@ public final class MessageOuterClass {
         return PARSER;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Parser<NATCheck> getParserForType() {
         return PARSER;
       }
 
-      public botnet_p2p.MessageOuterClass.Message.NATCheck getDefaultInstanceForType() {
+      public NATCheck getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -3734,7 +3734,7 @@ public final class MessageOuterClass {
       /**
        * <code>string IP = 1;</code>
        */
-      java.lang.String getIP();
+      String getIP();
       /**
        * <code>string IP = 1;</code>
        */
@@ -3744,7 +3744,7 @@ public final class MessageOuterClass {
       /**
        * <code>string Port = 2;</code>
        */
-      java.lang.String getPort();
+      String getPort();
       /**
        * <code>string Port = 2;</code>
        */
@@ -3774,7 +3774,7 @@ public final class MessageOuterClass {
         isNAT_ = false;
       }
 
-      @java.lang.Override
+      @Override
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
@@ -3785,7 +3785,7 @@ public final class MessageOuterClass {
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -3806,13 +3806,13 @@ public final class MessageOuterClass {
                 break;
               }
               case 10: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
 
                 iP_ = s;
                 break;
               }
               case 18: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
 
                 port_ = s;
                 break;
@@ -3836,29 +3836,29 @@ public final class MessageOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Join_descriptor;
+        return MessageOuterClass.internal_static_botnet_p2p_Message_Join_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Join_fieldAccessorTable
+        return MessageOuterClass.internal_static_botnet_p2p_Message_Join_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                botnet_p2p.MessageOuterClass.Message.Join.class, botnet_p2p.MessageOuterClass.Message.Join.Builder.class);
+                Join.class, Builder.class);
       }
 
       public static final int IP_FIELD_NUMBER = 1;
-      private volatile java.lang.Object iP_;
+      private volatile Object iP_;
       /**
        * <code>string IP = 1;</code>
        */
-      public java.lang.String getIP() {
-        java.lang.Object ref = iP_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
+      public String getIP() {
+        Object ref = iP_;
+        if (ref instanceof String) {
+          return (String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           iP_ = s;
           return s;
         }
@@ -3868,11 +3868,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getIPBytes() {
-        java.lang.Object ref = iP_;
-        if (ref instanceof java.lang.String) {
+        Object ref = iP_;
+        if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           iP_ = b;
           return b;
         } else {
@@ -3881,18 +3881,18 @@ public final class MessageOuterClass {
       }
 
       public static final int PORT_FIELD_NUMBER = 2;
-      private volatile java.lang.Object port_;
+      private volatile Object port_;
       /**
        * <code>string Port = 2;</code>
        */
-      public java.lang.String getPort() {
-        java.lang.Object ref = port_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
+      public String getPort() {
+        Object ref = port_;
+        if (ref instanceof String) {
+          return (String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           port_ = s;
           return s;
         }
@@ -3902,11 +3902,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getPortBytes() {
-        java.lang.Object ref = port_;
-        if (ref instanceof java.lang.String) {
+        Object ref = port_;
+        if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           port_ = b;
           return b;
         } else {
@@ -3967,15 +3967,15 @@ public final class MessageOuterClass {
         return size;
       }
 
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
+      @Override
+      public boolean equals(final Object obj) {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof botnet_p2p.MessageOuterClass.Message.Join)) {
+        if (!(obj instanceof Join)) {
           return super.equals(obj);
         }
-        botnet_p2p.MessageOuterClass.Message.Join other = (botnet_p2p.MessageOuterClass.Message.Join) obj;
+        Join other = (Join) obj;
 
         boolean result = true;
         result = result && getIP()
@@ -3988,7 +3988,7 @@ public final class MessageOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
@@ -4007,69 +4007,69 @@ public final class MessageOuterClass {
         return hash;
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(
+      public static Join parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(
+      public static Join parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(
+      public static Join parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(
+      public static Join parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(byte[] data)
+      public static Join parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(
+      public static Join parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(java.io.InputStream input)
+      public static Join parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(
+      public static Join parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseDelimitedFrom(java.io.InputStream input)
+      public static Join parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseDelimitedFrom(
+      public static Join parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(
+      public static Join parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Join parseFrom(
+      public static Join parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -4081,7 +4081,7 @@ public final class MessageOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(botnet_p2p.MessageOuterClass.Message.Join prototype) {
+      public static Builder newBuilder(Join prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() {
@@ -4089,9 +4089,9 @@ public final class MessageOuterClass {
             ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @java.lang.Override
+      @Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -4101,17 +4101,17 @@ public final class MessageOuterClass {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:botnet_p2p.Message.Join)
-          botnet_p2p.MessageOuterClass.Message.JoinOrBuilder {
+          JoinOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Join_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Join_descriptor;
         }
 
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Join_fieldAccessorTable
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Join_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  botnet_p2p.MessageOuterClass.Message.Join.class, botnet_p2p.MessageOuterClass.Message.Join.Builder.class);
+                  Join.class, Builder.class);
         }
 
         // Construct using botnet_p2p.MessageOuterClass.Message.Join.newBuilder()
@@ -4120,7 +4120,7 @@ public final class MessageOuterClass {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -4142,23 +4142,23 @@ public final class MessageOuterClass {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Join_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Join_descriptor;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Join getDefaultInstanceForType() {
-          return botnet_p2p.MessageOuterClass.Message.Join.getDefaultInstance();
+        public Join getDefaultInstanceForType() {
+          return Join.getDefaultInstance();
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Join build() {
-          botnet_p2p.MessageOuterClass.Message.Join result = buildPartial();
+        public Join build() {
+          Join result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Join buildPartial() {
-          botnet_p2p.MessageOuterClass.Message.Join result = new botnet_p2p.MessageOuterClass.Message.Join(this);
+        public Join buildPartial() {
+          Join result = new Join(this);
           result.iP_ = iP_;
           result.port_ = port_;
           result.isNAT_ = isNAT_;
@@ -4171,7 +4171,7 @@ public final class MessageOuterClass {
         }
         public Builder setField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.setField(field, value);
         }
         public Builder clearField(
@@ -4184,25 +4184,25 @@ public final class MessageOuterClass {
         }
         public Builder setRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+            int index, Object value) {
           return (Builder) super.setRepeatedField(field, index, value);
         }
         public Builder addRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.addRepeatedField(field, value);
         }
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof botnet_p2p.MessageOuterClass.Message.Join) {
-            return mergeFrom((botnet_p2p.MessageOuterClass.Message.Join)other);
+          if (other instanceof Join) {
+            return mergeFrom((Join)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(botnet_p2p.MessageOuterClass.Message.Join other) {
-          if (other == botnet_p2p.MessageOuterClass.Message.Join.getDefaultInstance()) return this;
+        public Builder mergeFrom(Join other) {
+          if (other == Join.getDefaultInstance()) return this;
           if (!other.getIP().isEmpty()) {
             iP_ = other.iP_;
             onChanged();
@@ -4227,11 +4227,11 @@ public final class MessageOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          botnet_p2p.MessageOuterClass.Message.Join parsedMessage = null;
+          Join parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (botnet_p2p.MessageOuterClass.Message.Join) e.getUnfinishedMessage();
+            parsedMessage = (Join) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -4241,20 +4241,20 @@ public final class MessageOuterClass {
           return this;
         }
 
-        private java.lang.Object iP_ = "";
+        private Object iP_ = "";
         /**
          * <code>string IP = 1;</code>
          */
-        public java.lang.String getIP() {
-          java.lang.Object ref = iP_;
-          if (!(ref instanceof java.lang.String)) {
+        public String getIP() {
+          Object ref = iP_;
+          if (!(ref instanceof String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            java.lang.String s = bs.toStringUtf8();
+            String s = bs.toStringUtf8();
             iP_ = s;
             return s;
           } else {
-            return (java.lang.String) ref;
+            return (String) ref;
           }
         }
         /**
@@ -4262,11 +4262,11 @@ public final class MessageOuterClass {
          */
         public com.google.protobuf.ByteString
             getIPBytes() {
-          java.lang.Object ref = iP_;
+          Object ref = iP_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
+                    (String) ref);
             iP_ = b;
             return b;
           } else {
@@ -4277,7 +4277,7 @@ public final class MessageOuterClass {
          * <code>string IP = 1;</code>
          */
         public Builder setIP(
-            java.lang.String value) {
+            String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -4310,20 +4310,20 @@ public final class MessageOuterClass {
           return this;
         }
 
-        private java.lang.Object port_ = "";
+        private Object port_ = "";
         /**
          * <code>string Port = 2;</code>
          */
-        public java.lang.String getPort() {
-          java.lang.Object ref = port_;
-          if (!(ref instanceof java.lang.String)) {
+        public String getPort() {
+          Object ref = port_;
+          if (!(ref instanceof String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            java.lang.String s = bs.toStringUtf8();
+            String s = bs.toStringUtf8();
             port_ = s;
             return s;
           } else {
-            return (java.lang.String) ref;
+            return (String) ref;
           }
         }
         /**
@@ -4331,11 +4331,11 @@ public final class MessageOuterClass {
          */
         public com.google.protobuf.ByteString
             getPortBytes() {
-          java.lang.Object ref = port_;
+          Object ref = port_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
+                    (String) ref);
             port_ = b;
             return b;
           } else {
@@ -4346,7 +4346,7 @@ public final class MessageOuterClass {
          * <code>string Port = 2;</code>
          */
         public Builder setPort(
-            java.lang.String value) {
+            String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -4419,12 +4419,12 @@ public final class MessageOuterClass {
       }
 
       // @@protoc_insertion_point(class_scope:botnet_p2p.Message.Join)
-      private static final botnet_p2p.MessageOuterClass.Message.Join DEFAULT_INSTANCE;
+      private static final Join DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new botnet_p2p.MessageOuterClass.Message.Join();
+        DEFAULT_INSTANCE = new Join();
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.Join getDefaultInstance() {
+      public static Join getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -4442,12 +4442,12 @@ public final class MessageOuterClass {
         return PARSER;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Parser<Join> getParserForType() {
         return PARSER;
       }
 
-      public botnet_p2p.MessageOuterClass.Message.Join getDefaultInstanceForType() {
+      public Join getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -4460,7 +4460,7 @@ public final class MessageOuterClass {
       /**
        * <code>string guid = 1;</code>
        */
-      java.lang.String getGuid();
+      String getGuid();
       /**
        * <code>string guid = 1;</code>
        */
@@ -4483,7 +4483,7 @@ public final class MessageOuterClass {
         guid_ = "";
       }
 
-      @java.lang.Override
+      @Override
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
@@ -4494,7 +4494,7 @@ public final class MessageOuterClass {
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -4515,7 +4515,7 @@ public final class MessageOuterClass {
                 break;
               }
               case 10: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
 
                 guid_ = s;
                 break;
@@ -4534,29 +4534,29 @@ public final class MessageOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Leave_descriptor;
+        return MessageOuterClass.internal_static_botnet_p2p_Message_Leave_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Leave_fieldAccessorTable
+        return MessageOuterClass.internal_static_botnet_p2p_Message_Leave_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                botnet_p2p.MessageOuterClass.Message.Leave.class, botnet_p2p.MessageOuterClass.Message.Leave.Builder.class);
+                Leave.class, Builder.class);
       }
 
       public static final int GUID_FIELD_NUMBER = 1;
-      private volatile java.lang.Object guid_;
+      private volatile Object guid_;
       /**
        * <code>string guid = 1;</code>
        */
-      public java.lang.String getGuid() {
-        java.lang.Object ref = guid_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
+      public String getGuid() {
+        Object ref = guid_;
+        if (ref instanceof String) {
+          return (String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           guid_ = s;
           return s;
         }
@@ -4566,11 +4566,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getGuidBytes() {
-        java.lang.Object ref = guid_;
-        if (ref instanceof java.lang.String) {
+        Object ref = guid_;
+        if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           guid_ = b;
           return b;
         } else {
@@ -4609,15 +4609,15 @@ public final class MessageOuterClass {
         return size;
       }
 
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
+      @Override
+      public boolean equals(final Object obj) {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof botnet_p2p.MessageOuterClass.Message.Leave)) {
+        if (!(obj instanceof Leave)) {
           return super.equals(obj);
         }
-        botnet_p2p.MessageOuterClass.Message.Leave other = (botnet_p2p.MessageOuterClass.Message.Leave) obj;
+        Leave other = (Leave) obj;
 
         boolean result = true;
         result = result && getGuid()
@@ -4626,7 +4626,7 @@ public final class MessageOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
@@ -4640,69 +4640,69 @@ public final class MessageOuterClass {
         return hash;
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(
+      public static Leave parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(
+      public static Leave parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(
+      public static Leave parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(
+      public static Leave parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(byte[] data)
+      public static Leave parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(
+      public static Leave parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(java.io.InputStream input)
+      public static Leave parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(
+      public static Leave parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseDelimitedFrom(java.io.InputStream input)
+      public static Leave parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseDelimitedFrom(
+      public static Leave parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(
+      public static Leave parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static botnet_p2p.MessageOuterClass.Message.Leave parseFrom(
+      public static Leave parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -4714,7 +4714,7 @@ public final class MessageOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(botnet_p2p.MessageOuterClass.Message.Leave prototype) {
+      public static Builder newBuilder(Leave prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() {
@@ -4722,9 +4722,9 @@ public final class MessageOuterClass {
             ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @java.lang.Override
+      @Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -4734,17 +4734,17 @@ public final class MessageOuterClass {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:botnet_p2p.Message.Leave)
-          botnet_p2p.MessageOuterClass.Message.LeaveOrBuilder {
+          LeaveOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Leave_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Leave_descriptor;
         }
 
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Leave_fieldAccessorTable
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Leave_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  botnet_p2p.MessageOuterClass.Message.Leave.class, botnet_p2p.MessageOuterClass.Message.Leave.Builder.class);
+                  Leave.class, Builder.class);
         }
 
         // Construct using botnet_p2p.MessageOuterClass.Message.Leave.newBuilder()
@@ -4753,7 +4753,7 @@ public final class MessageOuterClass {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -4771,23 +4771,23 @@ public final class MessageOuterClass {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_Leave_descriptor;
+          return MessageOuterClass.internal_static_botnet_p2p_Message_Leave_descriptor;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Leave getDefaultInstanceForType() {
-          return botnet_p2p.MessageOuterClass.Message.Leave.getDefaultInstance();
+        public Leave getDefaultInstanceForType() {
+          return Leave.getDefaultInstance();
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Leave build() {
-          botnet_p2p.MessageOuterClass.Message.Leave result = buildPartial();
+        public Leave build() {
+          Leave result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public botnet_p2p.MessageOuterClass.Message.Leave buildPartial() {
-          botnet_p2p.MessageOuterClass.Message.Leave result = new botnet_p2p.MessageOuterClass.Message.Leave(this);
+        public Leave buildPartial() {
+          Leave result = new Leave(this);
           result.guid_ = guid_;
           onBuilt();
           return result;
@@ -4798,7 +4798,7 @@ public final class MessageOuterClass {
         }
         public Builder setField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.setField(field, value);
         }
         public Builder clearField(
@@ -4811,25 +4811,25 @@ public final class MessageOuterClass {
         }
         public Builder setRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+            int index, Object value) {
           return (Builder) super.setRepeatedField(field, index, value);
         }
         public Builder addRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+            Object value) {
           return (Builder) super.addRepeatedField(field, value);
         }
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof botnet_p2p.MessageOuterClass.Message.Leave) {
-            return mergeFrom((botnet_p2p.MessageOuterClass.Message.Leave)other);
+          if (other instanceof Leave) {
+            return mergeFrom((Leave)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(botnet_p2p.MessageOuterClass.Message.Leave other) {
-          if (other == botnet_p2p.MessageOuterClass.Message.Leave.getDefaultInstance()) return this;
+        public Builder mergeFrom(Leave other) {
+          if (other == Leave.getDefaultInstance()) return this;
           if (!other.getGuid().isEmpty()) {
             guid_ = other.guid_;
             onChanged();
@@ -4847,11 +4847,11 @@ public final class MessageOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          botnet_p2p.MessageOuterClass.Message.Leave parsedMessage = null;
+          Leave parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (botnet_p2p.MessageOuterClass.Message.Leave) e.getUnfinishedMessage();
+            parsedMessage = (Leave) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -4861,20 +4861,20 @@ public final class MessageOuterClass {
           return this;
         }
 
-        private java.lang.Object guid_ = "";
+        private Object guid_ = "";
         /**
          * <code>string guid = 1;</code>
          */
-        public java.lang.String getGuid() {
-          java.lang.Object ref = guid_;
-          if (!(ref instanceof java.lang.String)) {
+        public String getGuid() {
+          Object ref = guid_;
+          if (!(ref instanceof String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            java.lang.String s = bs.toStringUtf8();
+            String s = bs.toStringUtf8();
             guid_ = s;
             return s;
           } else {
-            return (java.lang.String) ref;
+            return (String) ref;
           }
         }
         /**
@@ -4882,11 +4882,11 @@ public final class MessageOuterClass {
          */
         public com.google.protobuf.ByteString
             getGuidBytes() {
-          java.lang.Object ref = guid_;
+          Object ref = guid_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
+                    (String) ref);
             guid_ = b;
             return b;
           } else {
@@ -4897,7 +4897,7 @@ public final class MessageOuterClass {
          * <code>string guid = 1;</code>
          */
         public Builder setGuid(
-            java.lang.String value) {
+            String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -4944,12 +4944,12 @@ public final class MessageOuterClass {
       }
 
       // @@protoc_insertion_point(class_scope:botnet_p2p.Message.Leave)
-      private static final botnet_p2p.MessageOuterClass.Message.Leave DEFAULT_INSTANCE;
+      private static final Leave DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new botnet_p2p.MessageOuterClass.Message.Leave();
+        DEFAULT_INSTANCE = new Leave();
       }
 
-      public static botnet_p2p.MessageOuterClass.Message.Leave getDefaultInstance() {
+      public static Leave getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -4967,28 +4967,28 @@ public final class MessageOuterClass {
         return PARSER;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Parser<Leave> getParserForType() {
         return PARSER;
       }
 
-      public botnet_p2p.MessageOuterClass.Message.Leave getDefaultInstanceForType() {
+      public Leave getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
     private int payloadCase_ = 0;
-    private java.lang.Object payload_;
+    private Object payload_;
     public enum PayloadCase
         implements com.google.protobuf.Internal.EnumLite {
-      COMMAND(7),
-      RESPONSE(8),
-      FILE(9),
-      NATREQUEST(10),
-      NATCHECK(11),
-      JOIN(12),
-      LEAVE(13),
+      PCOMMAND(7),
+      PRESPONSE(8),
+      PFILE(9),
+      PNATREQUEST(10),
+      PNATCHECK(11),
+      PJOIN(12),
+      PLEAVE(13),
       PAYLOAD_NOT_SET(0);
       private final int value;
       private PayloadCase(int value) {
@@ -4997,20 +4997,20 @@ public final class MessageOuterClass {
       /**
        * @deprecated Use {@link #forNumber(int)} instead.
        */
-      @java.lang.Deprecated
+      @Deprecated
       public static PayloadCase valueOf(int value) {
         return forNumber(value);
       }
 
       public static PayloadCase forNumber(int value) {
         switch (value) {
-          case 7: return COMMAND;
-          case 8: return RESPONSE;
-          case 9: return FILE;
-          case 10: return NATREQUEST;
-          case 11: return NATCHECK;
-          case 12: return JOIN;
-          case 13: return LEAVE;
+          case 7: return PCOMMAND;
+          case 8: return PRESPONSE;
+          case 9: return PFILE;
+          case 10: return PNATREQUEST;
+          case 11: return PNATCHECK;
+          case 12: return PJOIN;
+          case 13: return PLEAVE;
           case 0: return PAYLOAD_NOT_SET;
           default: return null;
         }
@@ -5027,18 +5027,18 @@ public final class MessageOuterClass {
     }
 
     public static final int UUID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object uuid_;
+    private volatile Object uuid_;
     /**
      * <code>string uuid = 1;</code>
      */
-    public java.lang.String getUuid() {
-      java.lang.Object ref = uuid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getUuid() {
+      Object ref = uuid_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         uuid_ = s;
         return s;
       }
@@ -5048,11 +5048,11 @@ public final class MessageOuterClass {
      */
     public com.google.protobuf.ByteString
         getUuidBytes() {
-      java.lang.Object ref = uuid_;
-      if (ref instanceof java.lang.String) {
+      Object ref = uuid_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         uuid_ = b;
         return b;
       } else {
@@ -5071,24 +5071,24 @@ public final class MessageOuterClass {
     /**
      * <code>.botnet_p2p.Message.MessageType TYPE = 2;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.MessageType getTYPE() {
-      botnet_p2p.MessageOuterClass.Message.MessageType result = botnet_p2p.MessageOuterClass.Message.MessageType.valueOf(tYPE_);
-      return result == null ? botnet_p2p.MessageOuterClass.Message.MessageType.UNRECOGNIZED : result;
+    public MessageType getTYPE() {
+      MessageType result = MessageType.valueOf(tYPE_);
+      return result == null ? MessageType.UNRECOGNIZED : result;
     }
 
     public static final int SENDER_FIELD_NUMBER = 3;
-    private volatile java.lang.Object sender_;
+    private volatile Object sender_;
     /**
      * <code>string sender = 3;</code>
      */
-    public java.lang.String getSender() {
-      java.lang.Object ref = sender_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getSender() {
+      Object ref = sender_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         sender_ = s;
         return s;
       }
@@ -5098,11 +5098,11 @@ public final class MessageOuterClass {
      */
     public com.google.protobuf.ByteString
         getSenderBytes() {
-      java.lang.Object ref = sender_;
-      if (ref instanceof java.lang.String) {
+      Object ref = sender_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         sender_ = b;
         return b;
       } else {
@@ -5111,18 +5111,18 @@ public final class MessageOuterClass {
     }
 
     public static final int RECEIVER_FIELD_NUMBER = 4;
-    private volatile java.lang.Object receiver_;
+    private volatile Object receiver_;
     /**
      * <code>string receiver = 4;</code>
      */
-    public java.lang.String getReceiver() {
-      java.lang.Object ref = receiver_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getReceiver() {
+      Object ref = receiver_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         receiver_ = s;
         return s;
       }
@@ -5132,11 +5132,11 @@ public final class MessageOuterClass {
      */
     public com.google.protobuf.ByteString
         getReceiverBytes() {
-      java.lang.Object ref = receiver_;
-      if (ref instanceof java.lang.String) {
+      Object ref = receiver_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         receiver_ = b;
         return b;
       } else {
@@ -5162,186 +5162,186 @@ public final class MessageOuterClass {
       return signature_;
     }
 
-    public static final int COMMAND_FIELD_NUMBER = 7;
+    public static final int PCOMMAND_FIELD_NUMBER = 7;
     /**
-     * <code>.botnet_p2p.Message.Command command = 7;</code>
+     * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
      */
-    public boolean hasCommand() {
+    public boolean hasPCommand() {
       return payloadCase_ == 7;
     }
     /**
-     * <code>.botnet_p2p.Message.Command command = 7;</code>
+     * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.Command getCommand() {
+    public Command getPCommand() {
       if (payloadCase_ == 7) {
-         return (botnet_p2p.MessageOuterClass.Message.Command) payload_;
+         return (Command) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.Command.getDefaultInstance();
+      return Command.getDefaultInstance();
     }
     /**
-     * <code>.botnet_p2p.Message.Command command = 7;</code>
+     * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.CommandOrBuilder getCommandOrBuilder() {
+    public CommandOrBuilder getPCommandOrBuilder() {
       if (payloadCase_ == 7) {
-         return (botnet_p2p.MessageOuterClass.Message.Command) payload_;
+         return (Command) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.Command.getDefaultInstance();
+      return Command.getDefaultInstance();
     }
 
-    public static final int RESPONSE_FIELD_NUMBER = 8;
+    public static final int PRESPONSE_FIELD_NUMBER = 8;
     /**
-     * <code>.botnet_p2p.Message.Response response = 8;</code>
+     * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
      */
-    public boolean hasResponse() {
+    public boolean hasPResponse() {
       return payloadCase_ == 8;
     }
     /**
-     * <code>.botnet_p2p.Message.Response response = 8;</code>
+     * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.Response getResponse() {
+    public Response getPResponse() {
       if (payloadCase_ == 8) {
-         return (botnet_p2p.MessageOuterClass.Message.Response) payload_;
+         return (Response) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.Response.getDefaultInstance();
+      return Response.getDefaultInstance();
     }
     /**
-     * <code>.botnet_p2p.Message.Response response = 8;</code>
+     * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.ResponseOrBuilder getResponseOrBuilder() {
+    public ResponseOrBuilder getPResponseOrBuilder() {
       if (payloadCase_ == 8) {
-         return (botnet_p2p.MessageOuterClass.Message.Response) payload_;
+         return (Response) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.Response.getDefaultInstance();
+      return Response.getDefaultInstance();
     }
 
-    public static final int FILE_FIELD_NUMBER = 9;
+    public static final int PFILE_FIELD_NUMBER = 9;
     /**
-     * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+     * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
      */
-    public boolean hasFile() {
+    public boolean hasPFile() {
       return payloadCase_ == 9;
     }
     /**
-     * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+     * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.FileChunk getFile() {
+    public FileChunk getPFile() {
       if (payloadCase_ == 9) {
-         return (botnet_p2p.MessageOuterClass.Message.FileChunk) payload_;
+         return (FileChunk) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.FileChunk.getDefaultInstance();
+      return FileChunk.getDefaultInstance();
     }
     /**
-     * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+     * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.FileChunkOrBuilder getFileOrBuilder() {
+    public FileChunkOrBuilder getPFileOrBuilder() {
       if (payloadCase_ == 9) {
-         return (botnet_p2p.MessageOuterClass.Message.FileChunk) payload_;
+         return (FileChunk) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.FileChunk.getDefaultInstance();
+      return FileChunk.getDefaultInstance();
     }
 
-    public static final int NATREQUEST_FIELD_NUMBER = 10;
+    public static final int PNATREQUEST_FIELD_NUMBER = 10;
     /**
-     * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+     * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
      */
-    public boolean hasNatRequest() {
+    public boolean hasPNATRequest() {
       return payloadCase_ == 10;
     }
     /**
-     * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+     * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.NATRequest getNatRequest() {
+    public NATRequest getPNATRequest() {
       if (payloadCase_ == 10) {
-         return (botnet_p2p.MessageOuterClass.Message.NATRequest) payload_;
+         return (NATRequest) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.NATRequest.getDefaultInstance();
+      return NATRequest.getDefaultInstance();
     }
     /**
-     * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+     * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.NATRequestOrBuilder getNatRequestOrBuilder() {
+    public NATRequestOrBuilder getPNATRequestOrBuilder() {
       if (payloadCase_ == 10) {
-         return (botnet_p2p.MessageOuterClass.Message.NATRequest) payload_;
+         return (NATRequest) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.NATRequest.getDefaultInstance();
+      return NATRequest.getDefaultInstance();
     }
 
-    public static final int NATCHECK_FIELD_NUMBER = 11;
+    public static final int PNATCHECK_FIELD_NUMBER = 11;
     /**
-     * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+     * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
      */
-    public boolean hasNatCheck() {
+    public boolean hasPNATCheck() {
       return payloadCase_ == 11;
     }
     /**
-     * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+     * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.NATCheck getNatCheck() {
+    public NATCheck getPNATCheck() {
       if (payloadCase_ == 11) {
-         return (botnet_p2p.MessageOuterClass.Message.NATCheck) payload_;
+         return (NATCheck) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.NATCheck.getDefaultInstance();
+      return NATCheck.getDefaultInstance();
     }
     /**
-     * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+     * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.NATCheckOrBuilder getNatCheckOrBuilder() {
+    public NATCheckOrBuilder getPNATCheckOrBuilder() {
       if (payloadCase_ == 11) {
-         return (botnet_p2p.MessageOuterClass.Message.NATCheck) payload_;
+         return (NATCheck) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.NATCheck.getDefaultInstance();
+      return NATCheck.getDefaultInstance();
     }
 
-    public static final int JOIN_FIELD_NUMBER = 12;
+    public static final int PJOIN_FIELD_NUMBER = 12;
     /**
-     * <code>.botnet_p2p.Message.Join join = 12;</code>
+     * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
      */
-    public boolean hasJoin() {
+    public boolean hasPJoin() {
       return payloadCase_ == 12;
     }
     /**
-     * <code>.botnet_p2p.Message.Join join = 12;</code>
+     * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.Join getJoin() {
+    public Join getPJoin() {
       if (payloadCase_ == 12) {
-         return (botnet_p2p.MessageOuterClass.Message.Join) payload_;
+         return (Join) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.Join.getDefaultInstance();
+      return Join.getDefaultInstance();
     }
     /**
-     * <code>.botnet_p2p.Message.Join join = 12;</code>
+     * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.JoinOrBuilder getJoinOrBuilder() {
+    public JoinOrBuilder getPJoinOrBuilder() {
       if (payloadCase_ == 12) {
-         return (botnet_p2p.MessageOuterClass.Message.Join) payload_;
+         return (Join) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.Join.getDefaultInstance();
+      return Join.getDefaultInstance();
     }
 
-    public static final int LEAVE_FIELD_NUMBER = 13;
+    public static final int PLEAVE_FIELD_NUMBER = 13;
     /**
-     * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+     * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
      */
-    public boolean hasLeave() {
+    public boolean hasPLeave() {
       return payloadCase_ == 13;
     }
     /**
-     * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+     * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.Leave getLeave() {
+    public Leave getPLeave() {
       if (payloadCase_ == 13) {
-         return (botnet_p2p.MessageOuterClass.Message.Leave) payload_;
+         return (Leave) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.Leave.getDefaultInstance();
+      return Leave.getDefaultInstance();
     }
     /**
-     * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+     * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
      */
-    public botnet_p2p.MessageOuterClass.Message.LeaveOrBuilder getLeaveOrBuilder() {
+    public LeaveOrBuilder getPLeaveOrBuilder() {
       if (payloadCase_ == 13) {
-         return (botnet_p2p.MessageOuterClass.Message.Leave) payload_;
+         return (Leave) payload_;
       }
-      return botnet_p2p.MessageOuterClass.Message.Leave.getDefaultInstance();
+      return Leave.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -5359,7 +5359,7 @@ public final class MessageOuterClass {
       if (!getUuidBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, uuid_);
       }
-      if (tYPE_ != botnet_p2p.MessageOuterClass.Message.MessageType.UNDEFINED.getNumber()) {
+      if (tYPE_ != MessageType.UNDEFINED.getNumber()) {
         output.writeEnum(2, tYPE_);
       }
       if (!getSenderBytes().isEmpty()) {
@@ -5375,25 +5375,25 @@ public final class MessageOuterClass {
         output.writeBytes(6, signature_);
       }
       if (payloadCase_ == 7) {
-        output.writeMessage(7, (botnet_p2p.MessageOuterClass.Message.Command) payload_);
+        output.writeMessage(7, (Command) payload_);
       }
       if (payloadCase_ == 8) {
-        output.writeMessage(8, (botnet_p2p.MessageOuterClass.Message.Response) payload_);
+        output.writeMessage(8, (Response) payload_);
       }
       if (payloadCase_ == 9) {
-        output.writeMessage(9, (botnet_p2p.MessageOuterClass.Message.FileChunk) payload_);
+        output.writeMessage(9, (FileChunk) payload_);
       }
       if (payloadCase_ == 10) {
-        output.writeMessage(10, (botnet_p2p.MessageOuterClass.Message.NATRequest) payload_);
+        output.writeMessage(10, (NATRequest) payload_);
       }
       if (payloadCase_ == 11) {
-        output.writeMessage(11, (botnet_p2p.MessageOuterClass.Message.NATCheck) payload_);
+        output.writeMessage(11, (NATCheck) payload_);
       }
       if (payloadCase_ == 12) {
-        output.writeMessage(12, (botnet_p2p.MessageOuterClass.Message.Join) payload_);
+        output.writeMessage(12, (Join) payload_);
       }
       if (payloadCase_ == 13) {
-        output.writeMessage(13, (botnet_p2p.MessageOuterClass.Message.Leave) payload_);
+        output.writeMessage(13, (Leave) payload_);
       }
       unknownFields.writeTo(output);
     }
@@ -5406,7 +5406,7 @@ public final class MessageOuterClass {
       if (!getUuidBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, uuid_);
       }
-      if (tYPE_ != botnet_p2p.MessageOuterClass.Message.MessageType.UNDEFINED.getNumber()) {
+      if (tYPE_ != MessageType.UNDEFINED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, tYPE_);
       }
@@ -5426,46 +5426,46 @@ public final class MessageOuterClass {
       }
       if (payloadCase_ == 7) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, (botnet_p2p.MessageOuterClass.Message.Command) payload_);
+          .computeMessageSize(7, (Command) payload_);
       }
       if (payloadCase_ == 8) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, (botnet_p2p.MessageOuterClass.Message.Response) payload_);
+          .computeMessageSize(8, (Response) payload_);
       }
       if (payloadCase_ == 9) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, (botnet_p2p.MessageOuterClass.Message.FileChunk) payload_);
+          .computeMessageSize(9, (FileChunk) payload_);
       }
       if (payloadCase_ == 10) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, (botnet_p2p.MessageOuterClass.Message.NATRequest) payload_);
+          .computeMessageSize(10, (NATRequest) payload_);
       }
       if (payloadCase_ == 11) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, (botnet_p2p.MessageOuterClass.Message.NATCheck) payload_);
+          .computeMessageSize(11, (NATCheck) payload_);
       }
       if (payloadCase_ == 12) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, (botnet_p2p.MessageOuterClass.Message.Join) payload_);
+          .computeMessageSize(12, (Join) payload_);
       }
       if (payloadCase_ == 13) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, (botnet_p2p.MessageOuterClass.Message.Leave) payload_);
+          .computeMessageSize(13, (Leave) payload_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof botnet_p2p.MessageOuterClass.Message)) {
+      if (!(obj instanceof Message)) {
         return super.equals(obj);
       }
-      botnet_p2p.MessageOuterClass.Message other = (botnet_p2p.MessageOuterClass.Message) obj;
+      Message other = (Message) obj;
 
       boolean result = true;
       result = result && getUuid()
@@ -5484,32 +5484,32 @@ public final class MessageOuterClass {
       if (!result) return false;
       switch (payloadCase_) {
         case 7:
-          result = result && getCommand()
-              .equals(other.getCommand());
+          result = result && getPCommand()
+              .equals(other.getPCommand());
           break;
         case 8:
-          result = result && getResponse()
-              .equals(other.getResponse());
+          result = result && getPResponse()
+              .equals(other.getPResponse());
           break;
         case 9:
-          result = result && getFile()
-              .equals(other.getFile());
+          result = result && getPFile()
+              .equals(other.getPFile());
           break;
         case 10:
-          result = result && getNatRequest()
-              .equals(other.getNatRequest());
+          result = result && getPNATRequest()
+              .equals(other.getPNATRequest());
           break;
         case 11:
-          result = result && getNatCheck()
-              .equals(other.getNatCheck());
+          result = result && getPNATCheck()
+              .equals(other.getPNATCheck());
           break;
         case 12:
-          result = result && getJoin()
-              .equals(other.getJoin());
+          result = result && getPJoin()
+              .equals(other.getPJoin());
           break;
         case 13:
-          result = result && getLeave()
-              .equals(other.getLeave());
+          result = result && getPLeave()
+              .equals(other.getPLeave());
           break;
         case 0:
         default:
@@ -5518,7 +5518,7 @@ public final class MessageOuterClass {
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -5540,32 +5540,32 @@ public final class MessageOuterClass {
       hash = (53 * hash) + getSignature().hashCode();
       switch (payloadCase_) {
         case 7:
-          hash = (37 * hash) + COMMAND_FIELD_NUMBER;
-          hash = (53 * hash) + getCommand().hashCode();
+          hash = (37 * hash) + PCOMMAND_FIELD_NUMBER;
+          hash = (53 * hash) + getPCommand().hashCode();
           break;
         case 8:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
+          hash = (37 * hash) + PRESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getPResponse().hashCode();
           break;
         case 9:
-          hash = (37 * hash) + FILE_FIELD_NUMBER;
-          hash = (53 * hash) + getFile().hashCode();
+          hash = (37 * hash) + PFILE_FIELD_NUMBER;
+          hash = (53 * hash) + getPFile().hashCode();
           break;
         case 10:
-          hash = (37 * hash) + NATREQUEST_FIELD_NUMBER;
-          hash = (53 * hash) + getNatRequest().hashCode();
+          hash = (37 * hash) + PNATREQUEST_FIELD_NUMBER;
+          hash = (53 * hash) + getPNATRequest().hashCode();
           break;
         case 11:
-          hash = (37 * hash) + NATCHECK_FIELD_NUMBER;
-          hash = (53 * hash) + getNatCheck().hashCode();
+          hash = (37 * hash) + PNATCHECK_FIELD_NUMBER;
+          hash = (53 * hash) + getPNATCheck().hashCode();
           break;
         case 12:
-          hash = (37 * hash) + JOIN_FIELD_NUMBER;
-          hash = (53 * hash) + getJoin().hashCode();
+          hash = (37 * hash) + PJOIN_FIELD_NUMBER;
+          hash = (53 * hash) + getPJoin().hashCode();
           break;
         case 13:
-          hash = (37 * hash) + LEAVE_FIELD_NUMBER;
-          hash = (53 * hash) + getLeave().hashCode();
+          hash = (37 * hash) + PLEAVE_FIELD_NUMBER;
+          hash = (53 * hash) + getPLeave().hashCode();
           break;
         case 0:
         default:
@@ -5575,69 +5575,69 @@ public final class MessageOuterClass {
       return hash;
     }
 
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(
+    public static Message parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(
+    public static Message parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(
+    public static Message parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(
+    public static Message parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(byte[] data)
+    public static Message parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(
+    public static Message parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(java.io.InputStream input)
+    public static Message parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(
+    public static Message parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseDelimitedFrom(java.io.InputStream input)
+    public static Message parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseDelimitedFrom(
+    public static Message parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(
+    public static Message parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static botnet_p2p.MessageOuterClass.Message parseFrom(
+    public static Message parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5649,7 +5649,7 @@ public final class MessageOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(botnet_p2p.MessageOuterClass.Message prototype) {
+    public static Builder newBuilder(Message prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -5657,9 +5657,9 @@ public final class MessageOuterClass {
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -5669,17 +5669,17 @@ public final class MessageOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:botnet_p2p.Message)
-        botnet_p2p.MessageOuterClass.MessageOrBuilder {
+        MessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_descriptor;
+        return MessageOuterClass.internal_static_botnet_p2p_Message_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_fieldAccessorTable
+        return MessageOuterClass.internal_static_botnet_p2p_Message_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                botnet_p2p.MessageOuterClass.Message.class, botnet_p2p.MessageOuterClass.Message.Builder.class);
+                Message.class, Builder.class);
       }
 
       // Construct using botnet_p2p.MessageOuterClass.Message.newBuilder()
@@ -5688,7 +5688,7 @@ public final class MessageOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5718,23 +5718,23 @@ public final class MessageOuterClass {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return botnet_p2p.MessageOuterClass.internal_static_botnet_p2p_Message_descriptor;
+        return MessageOuterClass.internal_static_botnet_p2p_Message_descriptor;
       }
 
-      public botnet_p2p.MessageOuterClass.Message getDefaultInstanceForType() {
-        return botnet_p2p.MessageOuterClass.Message.getDefaultInstance();
+      public Message getDefaultInstanceForType() {
+        return Message.getDefaultInstance();
       }
 
-      public botnet_p2p.MessageOuterClass.Message build() {
-        botnet_p2p.MessageOuterClass.Message result = buildPartial();
+      public Message build() {
+        Message result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public botnet_p2p.MessageOuterClass.Message buildPartial() {
-        botnet_p2p.MessageOuterClass.Message result = new botnet_p2p.MessageOuterClass.Message(this);
+      public Message buildPartial() {
+        Message result = new Message(this);
         result.uuid_ = uuid_;
         result.tYPE_ = tYPE_;
         result.sender_ = sender_;
@@ -5742,52 +5742,52 @@ public final class MessageOuterClass {
         result.propagation_ = propagation_;
         result.signature_ = signature_;
         if (payloadCase_ == 7) {
-          if (commandBuilder_ == null) {
+          if (pCommandBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = commandBuilder_.build();
+            result.payload_ = pCommandBuilder_.build();
           }
         }
         if (payloadCase_ == 8) {
-          if (responseBuilder_ == null) {
+          if (pResponseBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = responseBuilder_.build();
+            result.payload_ = pResponseBuilder_.build();
           }
         }
         if (payloadCase_ == 9) {
-          if (fileBuilder_ == null) {
+          if (pFileBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = fileBuilder_.build();
+            result.payload_ = pFileBuilder_.build();
           }
         }
         if (payloadCase_ == 10) {
-          if (natRequestBuilder_ == null) {
+          if (pNATRequestBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = natRequestBuilder_.build();
+            result.payload_ = pNATRequestBuilder_.build();
           }
         }
         if (payloadCase_ == 11) {
-          if (natCheckBuilder_ == null) {
+          if (pNATCheckBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = natCheckBuilder_.build();
+            result.payload_ = pNATCheckBuilder_.build();
           }
         }
         if (payloadCase_ == 12) {
-          if (joinBuilder_ == null) {
+          if (pJoinBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = joinBuilder_.build();
+            result.payload_ = pJoinBuilder_.build();
           }
         }
         if (payloadCase_ == 13) {
-          if (leaveBuilder_ == null) {
+          if (pLeaveBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = leaveBuilder_.build();
+            result.payload_ = pLeaveBuilder_.build();
           }
         }
         result.payloadCase_ = payloadCase_;
@@ -5800,7 +5800,7 @@ public final class MessageOuterClass {
       }
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return (Builder) super.setField(field, value);
       }
       public Builder clearField(
@@ -5813,25 +5813,25 @@ public final class MessageOuterClass {
       }
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof botnet_p2p.MessageOuterClass.Message) {
-          return mergeFrom((botnet_p2p.MessageOuterClass.Message)other);
+        if (other instanceof Message) {
+          return mergeFrom((Message)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(botnet_p2p.MessageOuterClass.Message other) {
-        if (other == botnet_p2p.MessageOuterClass.Message.getDefaultInstance()) return this;
+      public Builder mergeFrom(Message other) {
+        if (other == Message.getDefaultInstance()) return this;
         if (!other.getUuid().isEmpty()) {
           uuid_ = other.uuid_;
           onChanged();
@@ -5854,32 +5854,32 @@ public final class MessageOuterClass {
           setSignature(other.getSignature());
         }
         switch (other.getPayloadCase()) {
-          case COMMAND: {
-            mergeCommand(other.getCommand());
+          case PCOMMAND: {
+            mergePCommand(other.getPCommand());
             break;
           }
-          case RESPONSE: {
-            mergeResponse(other.getResponse());
+          case PRESPONSE: {
+            mergePResponse(other.getPResponse());
             break;
           }
-          case FILE: {
-            mergeFile(other.getFile());
+          case PFILE: {
+            mergePFile(other.getPFile());
             break;
           }
-          case NATREQUEST: {
-            mergeNatRequest(other.getNatRequest());
+          case PNATREQUEST: {
+            mergePNATRequest(other.getPNATRequest());
             break;
           }
-          case NATCHECK: {
-            mergeNatCheck(other.getNatCheck());
+          case PNATCHECK: {
+            mergePNATCheck(other.getPNATCheck());
             break;
           }
-          case JOIN: {
-            mergeJoin(other.getJoin());
+          case PJOIN: {
+            mergePJoin(other.getPJoin());
             break;
           }
-          case LEAVE: {
-            mergeLeave(other.getLeave());
+          case PLEAVE: {
+            mergePLeave(other.getPLeave());
             break;
           }
           case PAYLOAD_NOT_SET: {
@@ -5899,11 +5899,11 @@ public final class MessageOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        botnet_p2p.MessageOuterClass.Message parsedMessage = null;
+        Message parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (botnet_p2p.MessageOuterClass.Message) e.getUnfinishedMessage();
+          parsedMessage = (Message) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5913,7 +5913,7 @@ public final class MessageOuterClass {
         return this;
       }
       private int payloadCase_ = 0;
-      private java.lang.Object payload_;
+      private Object payload_;
       public PayloadCase
           getPayloadCase() {
         return PayloadCase.forNumber(
@@ -5928,20 +5928,20 @@ public final class MessageOuterClass {
       }
 
 
-      private java.lang.Object uuid_ = "";
+      private Object uuid_ = "";
       /**
        * <code>string uuid = 1;</code>
        */
-      public java.lang.String getUuid() {
-        java.lang.Object ref = uuid_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getUuid() {
+        Object ref = uuid_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           uuid_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -5949,11 +5949,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getUuidBytes() {
-        java.lang.Object ref = uuid_;
+        Object ref = uuid_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           uuid_ = b;
           return b;
         } else {
@@ -5964,7 +5964,7 @@ public final class MessageOuterClass {
        * <code>string uuid = 1;</code>
        */
       public Builder setUuid(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6015,14 +6015,14 @@ public final class MessageOuterClass {
       /**
        * <code>.botnet_p2p.Message.MessageType TYPE = 2;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.MessageType getTYPE() {
-        botnet_p2p.MessageOuterClass.Message.MessageType result = botnet_p2p.MessageOuterClass.Message.MessageType.valueOf(tYPE_);
-        return result == null ? botnet_p2p.MessageOuterClass.Message.MessageType.UNRECOGNIZED : result;
+      public MessageType getTYPE() {
+        MessageType result = MessageType.valueOf(tYPE_);
+        return result == null ? MessageType.UNRECOGNIZED : result;
       }
       /**
        * <code>.botnet_p2p.Message.MessageType TYPE = 2;</code>
        */
-      public Builder setTYPE(botnet_p2p.MessageOuterClass.Message.MessageType value) {
+      public Builder setTYPE(MessageType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -6041,20 +6041,20 @@ public final class MessageOuterClass {
         return this;
       }
 
-      private java.lang.Object sender_ = "";
+      private Object sender_ = "";
       /**
        * <code>string sender = 3;</code>
        */
-      public java.lang.String getSender() {
-        java.lang.Object ref = sender_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getSender() {
+        Object ref = sender_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           sender_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -6062,11 +6062,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getSenderBytes() {
-        java.lang.Object ref = sender_;
+        Object ref = sender_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           sender_ = b;
           return b;
         } else {
@@ -6077,7 +6077,7 @@ public final class MessageOuterClass {
        * <code>string sender = 3;</code>
        */
       public Builder setSender(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6110,20 +6110,20 @@ public final class MessageOuterClass {
         return this;
       }
 
-      private java.lang.Object receiver_ = "";
+      private Object receiver_ = "";
       /**
        * <code>string receiver = 4;</code>
        */
-      public java.lang.String getReceiver() {
-        java.lang.Object ref = receiver_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getReceiver() {
+        Object ref = receiver_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           receiver_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -6131,11 +6131,11 @@ public final class MessageOuterClass {
        */
       public com.google.protobuf.ByteString
           getReceiverBytes() {
-        java.lang.Object ref = receiver_;
+        Object ref = receiver_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           receiver_ = b;
           return b;
         } else {
@@ -6146,7 +6146,7 @@ public final class MessageOuterClass {
        * <code>string receiver = 4;</code>
        */
       public Builder setReceiver(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6235,67 +6235,67 @@ public final class MessageOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.Command, botnet_p2p.MessageOuterClass.Message.Command.Builder, botnet_p2p.MessageOuterClass.Message.CommandOrBuilder> commandBuilder_;
+          Command, Command.Builder, CommandOrBuilder> pCommandBuilder_;
       /**
-       * <code>.botnet_p2p.Message.Command command = 7;</code>
+       * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
        */
-      public boolean hasCommand() {
+      public boolean hasPCommand() {
         return payloadCase_ == 7;
       }
       /**
-       * <code>.botnet_p2p.Message.Command command = 7;</code>
+       * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.Command getCommand() {
-        if (commandBuilder_ == null) {
+      public Command getPCommand() {
+        if (pCommandBuilder_ == null) {
           if (payloadCase_ == 7) {
-            return (botnet_p2p.MessageOuterClass.Message.Command) payload_;
+            return (Command) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.Command.getDefaultInstance();
+          return Command.getDefaultInstance();
         } else {
           if (payloadCase_ == 7) {
-            return commandBuilder_.getMessage();
+            return pCommandBuilder_.getMessage();
           }
-          return botnet_p2p.MessageOuterClass.Message.Command.getDefaultInstance();
+          return Command.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.Command command = 7;</code>
+       * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
        */
-      public Builder setCommand(botnet_p2p.MessageOuterClass.Message.Command value) {
-        if (commandBuilder_ == null) {
+      public Builder setPCommand(Command value) {
+        if (pCommandBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          commandBuilder_.setMessage(value);
+          pCommandBuilder_.setMessage(value);
         }
         payloadCase_ = 7;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Command command = 7;</code>
+       * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
        */
-      public Builder setCommand(
-          botnet_p2p.MessageOuterClass.Message.Command.Builder builderForValue) {
-        if (commandBuilder_ == null) {
+      public Builder setPCommand(
+          Command.Builder builderForValue) {
+        if (pCommandBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          commandBuilder_.setMessage(builderForValue.build());
+          pCommandBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 7;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Command command = 7;</code>
+       * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
        */
-      public Builder mergeCommand(botnet_p2p.MessageOuterClass.Message.Command value) {
-        if (commandBuilder_ == null) {
+      public Builder mergePCommand(Command value) {
+        if (pCommandBuilder_ == null) {
           if (payloadCase_ == 7 &&
-              payload_ != botnet_p2p.MessageOuterClass.Message.Command.getDefaultInstance()) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.Command.newBuilder((botnet_p2p.MessageOuterClass.Message.Command) payload_)
+              payload_ != Command.getDefaultInstance()) {
+            payload_ = Command.newBuilder((Command) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -6303,18 +6303,18 @@ public final class MessageOuterClass {
           onChanged();
         } else {
           if (payloadCase_ == 7) {
-            commandBuilder_.mergeFrom(value);
+            pCommandBuilder_.mergeFrom(value);
           }
-          commandBuilder_.setMessage(value);
+          pCommandBuilder_.setMessage(value);
         }
         payloadCase_ = 7;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Command command = 7;</code>
+       * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
        */
-      public Builder clearCommand() {
-        if (commandBuilder_ == null) {
+      public Builder clearPCommand() {
+        if (pCommandBuilder_ == null) {
           if (payloadCase_ == 7) {
             payloadCase_ = 0;
             payload_ = null;
@@ -6325,113 +6325,113 @@ public final class MessageOuterClass {
             payloadCase_ = 0;
             payload_ = null;
           }
-          commandBuilder_.clear();
+          pCommandBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Command command = 7;</code>
+       * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.Command.Builder getCommandBuilder() {
-        return getCommandFieldBuilder().getBuilder();
+      public Command.Builder getPCommandBuilder() {
+        return getPCommandFieldBuilder().getBuilder();
       }
       /**
-       * <code>.botnet_p2p.Message.Command command = 7;</code>
+       * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.CommandOrBuilder getCommandOrBuilder() {
-        if ((payloadCase_ == 7) && (commandBuilder_ != null)) {
-          return commandBuilder_.getMessageOrBuilder();
+      public CommandOrBuilder getPCommandOrBuilder() {
+        if ((payloadCase_ == 7) && (pCommandBuilder_ != null)) {
+          return pCommandBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 7) {
-            return (botnet_p2p.MessageOuterClass.Message.Command) payload_;
+            return (Command) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.Command.getDefaultInstance();
+          return Command.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.Command command = 7;</code>
+       * <code>.botnet_p2p.Message.Command pCommand = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.Command, botnet_p2p.MessageOuterClass.Message.Command.Builder, botnet_p2p.MessageOuterClass.Message.CommandOrBuilder> 
-          getCommandFieldBuilder() {
-        if (commandBuilder_ == null) {
+          Command, Command.Builder, CommandOrBuilder>
+          getPCommandFieldBuilder() {
+        if (pCommandBuilder_ == null) {
           if (!(payloadCase_ == 7)) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.Command.getDefaultInstance();
+            payload_ = Command.getDefaultInstance();
           }
-          commandBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              botnet_p2p.MessageOuterClass.Message.Command, botnet_p2p.MessageOuterClass.Message.Command.Builder, botnet_p2p.MessageOuterClass.Message.CommandOrBuilder>(
-                  (botnet_p2p.MessageOuterClass.Message.Command) payload_,
+          pCommandBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              Command, Command.Builder, CommandOrBuilder>(
+                  (Command) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 7;
         onChanged();;
-        return commandBuilder_;
+        return pCommandBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.Response, botnet_p2p.MessageOuterClass.Message.Response.Builder, botnet_p2p.MessageOuterClass.Message.ResponseOrBuilder> responseBuilder_;
+          Response, Response.Builder, ResponseOrBuilder> pResponseBuilder_;
       /**
-       * <code>.botnet_p2p.Message.Response response = 8;</code>
+       * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
        */
-      public boolean hasResponse() {
+      public boolean hasPResponse() {
         return payloadCase_ == 8;
       }
       /**
-       * <code>.botnet_p2p.Message.Response response = 8;</code>
+       * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.Response getResponse() {
-        if (responseBuilder_ == null) {
+      public Response getPResponse() {
+        if (pResponseBuilder_ == null) {
           if (payloadCase_ == 8) {
-            return (botnet_p2p.MessageOuterClass.Message.Response) payload_;
+            return (Response) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.Response.getDefaultInstance();
+          return Response.getDefaultInstance();
         } else {
           if (payloadCase_ == 8) {
-            return responseBuilder_.getMessage();
+            return pResponseBuilder_.getMessage();
           }
-          return botnet_p2p.MessageOuterClass.Message.Response.getDefaultInstance();
+          return Response.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.Response response = 8;</code>
+       * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
        */
-      public Builder setResponse(botnet_p2p.MessageOuterClass.Message.Response value) {
-        if (responseBuilder_ == null) {
+      public Builder setPResponse(Response value) {
+        if (pResponseBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          responseBuilder_.setMessage(value);
+          pResponseBuilder_.setMessage(value);
         }
         payloadCase_ = 8;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Response response = 8;</code>
+       * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
        */
-      public Builder setResponse(
-          botnet_p2p.MessageOuterClass.Message.Response.Builder builderForValue) {
-        if (responseBuilder_ == null) {
+      public Builder setPResponse(
+          Response.Builder builderForValue) {
+        if (pResponseBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          responseBuilder_.setMessage(builderForValue.build());
+          pResponseBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 8;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Response response = 8;</code>
+       * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
        */
-      public Builder mergeResponse(botnet_p2p.MessageOuterClass.Message.Response value) {
-        if (responseBuilder_ == null) {
+      public Builder mergePResponse(Response value) {
+        if (pResponseBuilder_ == null) {
           if (payloadCase_ == 8 &&
-              payload_ != botnet_p2p.MessageOuterClass.Message.Response.getDefaultInstance()) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.Response.newBuilder((botnet_p2p.MessageOuterClass.Message.Response) payload_)
+              payload_ != Response.getDefaultInstance()) {
+            payload_ = Response.newBuilder((Response) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -6439,18 +6439,18 @@ public final class MessageOuterClass {
           onChanged();
         } else {
           if (payloadCase_ == 8) {
-            responseBuilder_.mergeFrom(value);
+            pResponseBuilder_.mergeFrom(value);
           }
-          responseBuilder_.setMessage(value);
+          pResponseBuilder_.setMessage(value);
         }
         payloadCase_ = 8;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Response response = 8;</code>
+       * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
        */
-      public Builder clearResponse() {
-        if (responseBuilder_ == null) {
+      public Builder clearPResponse() {
+        if (pResponseBuilder_ == null) {
           if (payloadCase_ == 8) {
             payloadCase_ = 0;
             payload_ = null;
@@ -6461,113 +6461,113 @@ public final class MessageOuterClass {
             payloadCase_ = 0;
             payload_ = null;
           }
-          responseBuilder_.clear();
+          pResponseBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Response response = 8;</code>
+       * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.Response.Builder getResponseBuilder() {
-        return getResponseFieldBuilder().getBuilder();
+      public Response.Builder getPResponseBuilder() {
+        return getPResponseFieldBuilder().getBuilder();
       }
       /**
-       * <code>.botnet_p2p.Message.Response response = 8;</code>
+       * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.ResponseOrBuilder getResponseOrBuilder() {
-        if ((payloadCase_ == 8) && (responseBuilder_ != null)) {
-          return responseBuilder_.getMessageOrBuilder();
+      public ResponseOrBuilder getPResponseOrBuilder() {
+        if ((payloadCase_ == 8) && (pResponseBuilder_ != null)) {
+          return pResponseBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 8) {
-            return (botnet_p2p.MessageOuterClass.Message.Response) payload_;
+            return (Response) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.Response.getDefaultInstance();
+          return Response.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.Response response = 8;</code>
+       * <code>.botnet_p2p.Message.Response pResponse = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.Response, botnet_p2p.MessageOuterClass.Message.Response.Builder, botnet_p2p.MessageOuterClass.Message.ResponseOrBuilder> 
-          getResponseFieldBuilder() {
-        if (responseBuilder_ == null) {
+          Response, Response.Builder, ResponseOrBuilder>
+          getPResponseFieldBuilder() {
+        if (pResponseBuilder_ == null) {
           if (!(payloadCase_ == 8)) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.Response.getDefaultInstance();
+            payload_ = Response.getDefaultInstance();
           }
-          responseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              botnet_p2p.MessageOuterClass.Message.Response, botnet_p2p.MessageOuterClass.Message.Response.Builder, botnet_p2p.MessageOuterClass.Message.ResponseOrBuilder>(
-                  (botnet_p2p.MessageOuterClass.Message.Response) payload_,
+          pResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              Response, Response.Builder, ResponseOrBuilder>(
+                  (Response) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 8;
         onChanged();;
-        return responseBuilder_;
+        return pResponseBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.FileChunk, botnet_p2p.MessageOuterClass.Message.FileChunk.Builder, botnet_p2p.MessageOuterClass.Message.FileChunkOrBuilder> fileBuilder_;
+          FileChunk, FileChunk.Builder, FileChunkOrBuilder> pFileBuilder_;
       /**
-       * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+       * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
        */
-      public boolean hasFile() {
+      public boolean hasPFile() {
         return payloadCase_ == 9;
       }
       /**
-       * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+       * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.FileChunk getFile() {
-        if (fileBuilder_ == null) {
+      public FileChunk getPFile() {
+        if (pFileBuilder_ == null) {
           if (payloadCase_ == 9) {
-            return (botnet_p2p.MessageOuterClass.Message.FileChunk) payload_;
+            return (FileChunk) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.FileChunk.getDefaultInstance();
+          return FileChunk.getDefaultInstance();
         } else {
           if (payloadCase_ == 9) {
-            return fileBuilder_.getMessage();
+            return pFileBuilder_.getMessage();
           }
-          return botnet_p2p.MessageOuterClass.Message.FileChunk.getDefaultInstance();
+          return FileChunk.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+       * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
        */
-      public Builder setFile(botnet_p2p.MessageOuterClass.Message.FileChunk value) {
-        if (fileBuilder_ == null) {
+      public Builder setPFile(FileChunk value) {
+        if (pFileBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          fileBuilder_.setMessage(value);
+          pFileBuilder_.setMessage(value);
         }
         payloadCase_ = 9;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+       * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
        */
-      public Builder setFile(
-          botnet_p2p.MessageOuterClass.Message.FileChunk.Builder builderForValue) {
-        if (fileBuilder_ == null) {
+      public Builder setPFile(
+          FileChunk.Builder builderForValue) {
+        if (pFileBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          fileBuilder_.setMessage(builderForValue.build());
+          pFileBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 9;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+       * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
        */
-      public Builder mergeFile(botnet_p2p.MessageOuterClass.Message.FileChunk value) {
-        if (fileBuilder_ == null) {
+      public Builder mergePFile(FileChunk value) {
+        if (pFileBuilder_ == null) {
           if (payloadCase_ == 9 &&
-              payload_ != botnet_p2p.MessageOuterClass.Message.FileChunk.getDefaultInstance()) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.FileChunk.newBuilder((botnet_p2p.MessageOuterClass.Message.FileChunk) payload_)
+              payload_ != FileChunk.getDefaultInstance()) {
+            payload_ = FileChunk.newBuilder((FileChunk) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -6575,18 +6575,18 @@ public final class MessageOuterClass {
           onChanged();
         } else {
           if (payloadCase_ == 9) {
-            fileBuilder_.mergeFrom(value);
+            pFileBuilder_.mergeFrom(value);
           }
-          fileBuilder_.setMessage(value);
+          pFileBuilder_.setMessage(value);
         }
         payloadCase_ = 9;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+       * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
        */
-      public Builder clearFile() {
-        if (fileBuilder_ == null) {
+      public Builder clearPFile() {
+        if (pFileBuilder_ == null) {
           if (payloadCase_ == 9) {
             payloadCase_ = 0;
             payload_ = null;
@@ -6597,113 +6597,113 @@ public final class MessageOuterClass {
             payloadCase_ = 0;
             payload_ = null;
           }
-          fileBuilder_.clear();
+          pFileBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+       * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.FileChunk.Builder getFileBuilder() {
-        return getFileFieldBuilder().getBuilder();
+      public FileChunk.Builder getPFileBuilder() {
+        return getPFileFieldBuilder().getBuilder();
       }
       /**
-       * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+       * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.FileChunkOrBuilder getFileOrBuilder() {
-        if ((payloadCase_ == 9) && (fileBuilder_ != null)) {
-          return fileBuilder_.getMessageOrBuilder();
+      public FileChunkOrBuilder getPFileOrBuilder() {
+        if ((payloadCase_ == 9) && (pFileBuilder_ != null)) {
+          return pFileBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 9) {
-            return (botnet_p2p.MessageOuterClass.Message.FileChunk) payload_;
+            return (FileChunk) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.FileChunk.getDefaultInstance();
+          return FileChunk.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.FileChunk file = 9;</code>
+       * <code>.botnet_p2p.Message.FileChunk pFile = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.FileChunk, botnet_p2p.MessageOuterClass.Message.FileChunk.Builder, botnet_p2p.MessageOuterClass.Message.FileChunkOrBuilder> 
-          getFileFieldBuilder() {
-        if (fileBuilder_ == null) {
+          FileChunk, FileChunk.Builder, FileChunkOrBuilder>
+          getPFileFieldBuilder() {
+        if (pFileBuilder_ == null) {
           if (!(payloadCase_ == 9)) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.FileChunk.getDefaultInstance();
+            payload_ = FileChunk.getDefaultInstance();
           }
-          fileBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              botnet_p2p.MessageOuterClass.Message.FileChunk, botnet_p2p.MessageOuterClass.Message.FileChunk.Builder, botnet_p2p.MessageOuterClass.Message.FileChunkOrBuilder>(
-                  (botnet_p2p.MessageOuterClass.Message.FileChunk) payload_,
+          pFileBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              FileChunk, FileChunk.Builder, FileChunkOrBuilder>(
+                  (FileChunk) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 9;
         onChanged();;
-        return fileBuilder_;
+        return pFileBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.NATRequest, botnet_p2p.MessageOuterClass.Message.NATRequest.Builder, botnet_p2p.MessageOuterClass.Message.NATRequestOrBuilder> natRequestBuilder_;
+          NATRequest, NATRequest.Builder, NATRequestOrBuilder> pNATRequestBuilder_;
       /**
-       * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+       * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
        */
-      public boolean hasNatRequest() {
+      public boolean hasPNATRequest() {
         return payloadCase_ == 10;
       }
       /**
-       * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+       * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.NATRequest getNatRequest() {
-        if (natRequestBuilder_ == null) {
+      public NATRequest getPNATRequest() {
+        if (pNATRequestBuilder_ == null) {
           if (payloadCase_ == 10) {
-            return (botnet_p2p.MessageOuterClass.Message.NATRequest) payload_;
+            return (NATRequest) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.NATRequest.getDefaultInstance();
+          return NATRequest.getDefaultInstance();
         } else {
           if (payloadCase_ == 10) {
-            return natRequestBuilder_.getMessage();
+            return pNATRequestBuilder_.getMessage();
           }
-          return botnet_p2p.MessageOuterClass.Message.NATRequest.getDefaultInstance();
+          return NATRequest.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+       * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
        */
-      public Builder setNatRequest(botnet_p2p.MessageOuterClass.Message.NATRequest value) {
-        if (natRequestBuilder_ == null) {
+      public Builder setPNATRequest(NATRequest value) {
+        if (pNATRequestBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          natRequestBuilder_.setMessage(value);
+          pNATRequestBuilder_.setMessage(value);
         }
         payloadCase_ = 10;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+       * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
        */
-      public Builder setNatRequest(
-          botnet_p2p.MessageOuterClass.Message.NATRequest.Builder builderForValue) {
-        if (natRequestBuilder_ == null) {
+      public Builder setPNATRequest(
+          NATRequest.Builder builderForValue) {
+        if (pNATRequestBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          natRequestBuilder_.setMessage(builderForValue.build());
+          pNATRequestBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 10;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+       * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
        */
-      public Builder mergeNatRequest(botnet_p2p.MessageOuterClass.Message.NATRequest value) {
-        if (natRequestBuilder_ == null) {
+      public Builder mergePNATRequest(NATRequest value) {
+        if (pNATRequestBuilder_ == null) {
           if (payloadCase_ == 10 &&
-              payload_ != botnet_p2p.MessageOuterClass.Message.NATRequest.getDefaultInstance()) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.NATRequest.newBuilder((botnet_p2p.MessageOuterClass.Message.NATRequest) payload_)
+              payload_ != NATRequest.getDefaultInstance()) {
+            payload_ = NATRequest.newBuilder((NATRequest) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -6711,18 +6711,18 @@ public final class MessageOuterClass {
           onChanged();
         } else {
           if (payloadCase_ == 10) {
-            natRequestBuilder_.mergeFrom(value);
+            pNATRequestBuilder_.mergeFrom(value);
           }
-          natRequestBuilder_.setMessage(value);
+          pNATRequestBuilder_.setMessage(value);
         }
         payloadCase_ = 10;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+       * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
        */
-      public Builder clearNatRequest() {
-        if (natRequestBuilder_ == null) {
+      public Builder clearPNATRequest() {
+        if (pNATRequestBuilder_ == null) {
           if (payloadCase_ == 10) {
             payloadCase_ = 0;
             payload_ = null;
@@ -6733,113 +6733,113 @@ public final class MessageOuterClass {
             payloadCase_ = 0;
             payload_ = null;
           }
-          natRequestBuilder_.clear();
+          pNATRequestBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+       * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.NATRequest.Builder getNatRequestBuilder() {
-        return getNatRequestFieldBuilder().getBuilder();
+      public NATRequest.Builder getPNATRequestBuilder() {
+        return getPNATRequestFieldBuilder().getBuilder();
       }
       /**
-       * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+       * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.NATRequestOrBuilder getNatRequestOrBuilder() {
-        if ((payloadCase_ == 10) && (natRequestBuilder_ != null)) {
-          return natRequestBuilder_.getMessageOrBuilder();
+      public NATRequestOrBuilder getPNATRequestOrBuilder() {
+        if ((payloadCase_ == 10) && (pNATRequestBuilder_ != null)) {
+          return pNATRequestBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 10) {
-            return (botnet_p2p.MessageOuterClass.Message.NATRequest) payload_;
+            return (NATRequest) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.NATRequest.getDefaultInstance();
+          return NATRequest.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.NATRequest natRequest = 10;</code>
+       * <code>.botnet_p2p.Message.NATRequest pNATRequest = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.NATRequest, botnet_p2p.MessageOuterClass.Message.NATRequest.Builder, botnet_p2p.MessageOuterClass.Message.NATRequestOrBuilder> 
-          getNatRequestFieldBuilder() {
-        if (natRequestBuilder_ == null) {
+          NATRequest, NATRequest.Builder, NATRequestOrBuilder>
+          getPNATRequestFieldBuilder() {
+        if (pNATRequestBuilder_ == null) {
           if (!(payloadCase_ == 10)) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.NATRequest.getDefaultInstance();
+            payload_ = NATRequest.getDefaultInstance();
           }
-          natRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              botnet_p2p.MessageOuterClass.Message.NATRequest, botnet_p2p.MessageOuterClass.Message.NATRequest.Builder, botnet_p2p.MessageOuterClass.Message.NATRequestOrBuilder>(
-                  (botnet_p2p.MessageOuterClass.Message.NATRequest) payload_,
+          pNATRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              NATRequest, NATRequest.Builder, NATRequestOrBuilder>(
+                  (NATRequest) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 10;
         onChanged();;
-        return natRequestBuilder_;
+        return pNATRequestBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.NATCheck, botnet_p2p.MessageOuterClass.Message.NATCheck.Builder, botnet_p2p.MessageOuterClass.Message.NATCheckOrBuilder> natCheckBuilder_;
+          NATCheck, NATCheck.Builder, NATCheckOrBuilder> pNATCheckBuilder_;
       /**
-       * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+       * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
        */
-      public boolean hasNatCheck() {
+      public boolean hasPNATCheck() {
         return payloadCase_ == 11;
       }
       /**
-       * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+       * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.NATCheck getNatCheck() {
-        if (natCheckBuilder_ == null) {
+      public NATCheck getPNATCheck() {
+        if (pNATCheckBuilder_ == null) {
           if (payloadCase_ == 11) {
-            return (botnet_p2p.MessageOuterClass.Message.NATCheck) payload_;
+            return (NATCheck) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.NATCheck.getDefaultInstance();
+          return NATCheck.getDefaultInstance();
         } else {
           if (payloadCase_ == 11) {
-            return natCheckBuilder_.getMessage();
+            return pNATCheckBuilder_.getMessage();
           }
-          return botnet_p2p.MessageOuterClass.Message.NATCheck.getDefaultInstance();
+          return NATCheck.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+       * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
        */
-      public Builder setNatCheck(botnet_p2p.MessageOuterClass.Message.NATCheck value) {
-        if (natCheckBuilder_ == null) {
+      public Builder setPNATCheck(NATCheck value) {
+        if (pNATCheckBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          natCheckBuilder_.setMessage(value);
+          pNATCheckBuilder_.setMessage(value);
         }
         payloadCase_ = 11;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+       * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
        */
-      public Builder setNatCheck(
-          botnet_p2p.MessageOuterClass.Message.NATCheck.Builder builderForValue) {
-        if (natCheckBuilder_ == null) {
+      public Builder setPNATCheck(
+          NATCheck.Builder builderForValue) {
+        if (pNATCheckBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          natCheckBuilder_.setMessage(builderForValue.build());
+          pNATCheckBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 11;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+       * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
        */
-      public Builder mergeNatCheck(botnet_p2p.MessageOuterClass.Message.NATCheck value) {
-        if (natCheckBuilder_ == null) {
+      public Builder mergePNATCheck(NATCheck value) {
+        if (pNATCheckBuilder_ == null) {
           if (payloadCase_ == 11 &&
-              payload_ != botnet_p2p.MessageOuterClass.Message.NATCheck.getDefaultInstance()) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.NATCheck.newBuilder((botnet_p2p.MessageOuterClass.Message.NATCheck) payload_)
+              payload_ != NATCheck.getDefaultInstance()) {
+            payload_ = NATCheck.newBuilder((NATCheck) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -6847,18 +6847,18 @@ public final class MessageOuterClass {
           onChanged();
         } else {
           if (payloadCase_ == 11) {
-            natCheckBuilder_.mergeFrom(value);
+            pNATCheckBuilder_.mergeFrom(value);
           }
-          natCheckBuilder_.setMessage(value);
+          pNATCheckBuilder_.setMessage(value);
         }
         payloadCase_ = 11;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+       * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
        */
-      public Builder clearNatCheck() {
-        if (natCheckBuilder_ == null) {
+      public Builder clearPNATCheck() {
+        if (pNATCheckBuilder_ == null) {
           if (payloadCase_ == 11) {
             payloadCase_ = 0;
             payload_ = null;
@@ -6869,113 +6869,113 @@ public final class MessageOuterClass {
             payloadCase_ = 0;
             payload_ = null;
           }
-          natCheckBuilder_.clear();
+          pNATCheckBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+       * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.NATCheck.Builder getNatCheckBuilder() {
-        return getNatCheckFieldBuilder().getBuilder();
+      public NATCheck.Builder getPNATCheckBuilder() {
+        return getPNATCheckFieldBuilder().getBuilder();
       }
       /**
-       * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+       * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.NATCheckOrBuilder getNatCheckOrBuilder() {
-        if ((payloadCase_ == 11) && (natCheckBuilder_ != null)) {
-          return natCheckBuilder_.getMessageOrBuilder();
+      public NATCheckOrBuilder getPNATCheckOrBuilder() {
+        if ((payloadCase_ == 11) && (pNATCheckBuilder_ != null)) {
+          return pNATCheckBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 11) {
-            return (botnet_p2p.MessageOuterClass.Message.NATCheck) payload_;
+            return (NATCheck) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.NATCheck.getDefaultInstance();
+          return NATCheck.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.NATCheck natCheck = 11;</code>
+       * <code>.botnet_p2p.Message.NATCheck pNATCheck = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.NATCheck, botnet_p2p.MessageOuterClass.Message.NATCheck.Builder, botnet_p2p.MessageOuterClass.Message.NATCheckOrBuilder> 
-          getNatCheckFieldBuilder() {
-        if (natCheckBuilder_ == null) {
+          NATCheck, NATCheck.Builder, NATCheckOrBuilder>
+          getPNATCheckFieldBuilder() {
+        if (pNATCheckBuilder_ == null) {
           if (!(payloadCase_ == 11)) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.NATCheck.getDefaultInstance();
+            payload_ = NATCheck.getDefaultInstance();
           }
-          natCheckBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              botnet_p2p.MessageOuterClass.Message.NATCheck, botnet_p2p.MessageOuterClass.Message.NATCheck.Builder, botnet_p2p.MessageOuterClass.Message.NATCheckOrBuilder>(
-                  (botnet_p2p.MessageOuterClass.Message.NATCheck) payload_,
+          pNATCheckBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              NATCheck, NATCheck.Builder, NATCheckOrBuilder>(
+                  (NATCheck) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 11;
         onChanged();;
-        return natCheckBuilder_;
+        return pNATCheckBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.Join, botnet_p2p.MessageOuterClass.Message.Join.Builder, botnet_p2p.MessageOuterClass.Message.JoinOrBuilder> joinBuilder_;
+          Join, Join.Builder, JoinOrBuilder> pJoinBuilder_;
       /**
-       * <code>.botnet_p2p.Message.Join join = 12;</code>
+       * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
        */
-      public boolean hasJoin() {
+      public boolean hasPJoin() {
         return payloadCase_ == 12;
       }
       /**
-       * <code>.botnet_p2p.Message.Join join = 12;</code>
+       * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.Join getJoin() {
-        if (joinBuilder_ == null) {
+      public Join getPJoin() {
+        if (pJoinBuilder_ == null) {
           if (payloadCase_ == 12) {
-            return (botnet_p2p.MessageOuterClass.Message.Join) payload_;
+            return (Join) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.Join.getDefaultInstance();
+          return Join.getDefaultInstance();
         } else {
           if (payloadCase_ == 12) {
-            return joinBuilder_.getMessage();
+            return pJoinBuilder_.getMessage();
           }
-          return botnet_p2p.MessageOuterClass.Message.Join.getDefaultInstance();
+          return Join.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.Join join = 12;</code>
+       * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
        */
-      public Builder setJoin(botnet_p2p.MessageOuterClass.Message.Join value) {
-        if (joinBuilder_ == null) {
+      public Builder setPJoin(Join value) {
+        if (pJoinBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          joinBuilder_.setMessage(value);
+          pJoinBuilder_.setMessage(value);
         }
         payloadCase_ = 12;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Join join = 12;</code>
+       * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
        */
-      public Builder setJoin(
-          botnet_p2p.MessageOuterClass.Message.Join.Builder builderForValue) {
-        if (joinBuilder_ == null) {
+      public Builder setPJoin(
+          Join.Builder builderForValue) {
+        if (pJoinBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          joinBuilder_.setMessage(builderForValue.build());
+          pJoinBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 12;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Join join = 12;</code>
+       * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
        */
-      public Builder mergeJoin(botnet_p2p.MessageOuterClass.Message.Join value) {
-        if (joinBuilder_ == null) {
+      public Builder mergePJoin(Join value) {
+        if (pJoinBuilder_ == null) {
           if (payloadCase_ == 12 &&
-              payload_ != botnet_p2p.MessageOuterClass.Message.Join.getDefaultInstance()) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.Join.newBuilder((botnet_p2p.MessageOuterClass.Message.Join) payload_)
+              payload_ != Join.getDefaultInstance()) {
+            payload_ = Join.newBuilder((Join) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -6983,18 +6983,18 @@ public final class MessageOuterClass {
           onChanged();
         } else {
           if (payloadCase_ == 12) {
-            joinBuilder_.mergeFrom(value);
+            pJoinBuilder_.mergeFrom(value);
           }
-          joinBuilder_.setMessage(value);
+          pJoinBuilder_.setMessage(value);
         }
         payloadCase_ = 12;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Join join = 12;</code>
+       * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
        */
-      public Builder clearJoin() {
-        if (joinBuilder_ == null) {
+      public Builder clearPJoin() {
+        if (pJoinBuilder_ == null) {
           if (payloadCase_ == 12) {
             payloadCase_ = 0;
             payload_ = null;
@@ -7005,113 +7005,113 @@ public final class MessageOuterClass {
             payloadCase_ = 0;
             payload_ = null;
           }
-          joinBuilder_.clear();
+          pJoinBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Join join = 12;</code>
+       * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.Join.Builder getJoinBuilder() {
-        return getJoinFieldBuilder().getBuilder();
+      public Join.Builder getPJoinBuilder() {
+        return getPJoinFieldBuilder().getBuilder();
       }
       /**
-       * <code>.botnet_p2p.Message.Join join = 12;</code>
+       * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.JoinOrBuilder getJoinOrBuilder() {
-        if ((payloadCase_ == 12) && (joinBuilder_ != null)) {
-          return joinBuilder_.getMessageOrBuilder();
+      public JoinOrBuilder getPJoinOrBuilder() {
+        if ((payloadCase_ == 12) && (pJoinBuilder_ != null)) {
+          return pJoinBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 12) {
-            return (botnet_p2p.MessageOuterClass.Message.Join) payload_;
+            return (Join) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.Join.getDefaultInstance();
+          return Join.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.Join join = 12;</code>
+       * <code>.botnet_p2p.Message.Join pJoin = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.Join, botnet_p2p.MessageOuterClass.Message.Join.Builder, botnet_p2p.MessageOuterClass.Message.JoinOrBuilder> 
-          getJoinFieldBuilder() {
-        if (joinBuilder_ == null) {
+          Join, Join.Builder, JoinOrBuilder>
+          getPJoinFieldBuilder() {
+        if (pJoinBuilder_ == null) {
           if (!(payloadCase_ == 12)) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.Join.getDefaultInstance();
+            payload_ = Join.getDefaultInstance();
           }
-          joinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              botnet_p2p.MessageOuterClass.Message.Join, botnet_p2p.MessageOuterClass.Message.Join.Builder, botnet_p2p.MessageOuterClass.Message.JoinOrBuilder>(
-                  (botnet_p2p.MessageOuterClass.Message.Join) payload_,
+          pJoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              Join, Join.Builder, JoinOrBuilder>(
+                  (Join) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 12;
         onChanged();;
-        return joinBuilder_;
+        return pJoinBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.Leave, botnet_p2p.MessageOuterClass.Message.Leave.Builder, botnet_p2p.MessageOuterClass.Message.LeaveOrBuilder> leaveBuilder_;
+          Leave, Leave.Builder, LeaveOrBuilder> pLeaveBuilder_;
       /**
-       * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+       * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
        */
-      public boolean hasLeave() {
+      public boolean hasPLeave() {
         return payloadCase_ == 13;
       }
       /**
-       * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+       * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.Leave getLeave() {
-        if (leaveBuilder_ == null) {
+      public Leave getPLeave() {
+        if (pLeaveBuilder_ == null) {
           if (payloadCase_ == 13) {
-            return (botnet_p2p.MessageOuterClass.Message.Leave) payload_;
+            return (Leave) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.Leave.getDefaultInstance();
+          return Leave.getDefaultInstance();
         } else {
           if (payloadCase_ == 13) {
-            return leaveBuilder_.getMessage();
+            return pLeaveBuilder_.getMessage();
           }
-          return botnet_p2p.MessageOuterClass.Message.Leave.getDefaultInstance();
+          return Leave.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+       * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
        */
-      public Builder setLeave(botnet_p2p.MessageOuterClass.Message.Leave value) {
-        if (leaveBuilder_ == null) {
+      public Builder setPLeave(Leave value) {
+        if (pLeaveBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          leaveBuilder_.setMessage(value);
+          pLeaveBuilder_.setMessage(value);
         }
         payloadCase_ = 13;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+       * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
        */
-      public Builder setLeave(
-          botnet_p2p.MessageOuterClass.Message.Leave.Builder builderForValue) {
-        if (leaveBuilder_ == null) {
+      public Builder setPLeave(
+          Leave.Builder builderForValue) {
+        if (pLeaveBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          leaveBuilder_.setMessage(builderForValue.build());
+          pLeaveBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 13;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+       * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
        */
-      public Builder mergeLeave(botnet_p2p.MessageOuterClass.Message.Leave value) {
-        if (leaveBuilder_ == null) {
+      public Builder mergePLeave(Leave value) {
+        if (pLeaveBuilder_ == null) {
           if (payloadCase_ == 13 &&
-              payload_ != botnet_p2p.MessageOuterClass.Message.Leave.getDefaultInstance()) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.Leave.newBuilder((botnet_p2p.MessageOuterClass.Message.Leave) payload_)
+              payload_ != Leave.getDefaultInstance()) {
+            payload_ = Leave.newBuilder((Leave) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -7119,18 +7119,18 @@ public final class MessageOuterClass {
           onChanged();
         } else {
           if (payloadCase_ == 13) {
-            leaveBuilder_.mergeFrom(value);
+            pLeaveBuilder_.mergeFrom(value);
           }
-          leaveBuilder_.setMessage(value);
+          pLeaveBuilder_.setMessage(value);
         }
         payloadCase_ = 13;
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+       * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
        */
-      public Builder clearLeave() {
-        if (leaveBuilder_ == null) {
+      public Builder clearPLeave() {
+        if (pLeaveBuilder_ == null) {
           if (payloadCase_ == 13) {
             payloadCase_ = 0;
             payload_ = null;
@@ -7141,49 +7141,49 @@ public final class MessageOuterClass {
             payloadCase_ = 0;
             payload_ = null;
           }
-          leaveBuilder_.clear();
+          pLeaveBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+       * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.Leave.Builder getLeaveBuilder() {
-        return getLeaveFieldBuilder().getBuilder();
+      public Leave.Builder getPLeaveBuilder() {
+        return getPLeaveFieldBuilder().getBuilder();
       }
       /**
-       * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+       * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
        */
-      public botnet_p2p.MessageOuterClass.Message.LeaveOrBuilder getLeaveOrBuilder() {
-        if ((payloadCase_ == 13) && (leaveBuilder_ != null)) {
-          return leaveBuilder_.getMessageOrBuilder();
+      public LeaveOrBuilder getPLeaveOrBuilder() {
+        if ((payloadCase_ == 13) && (pLeaveBuilder_ != null)) {
+          return pLeaveBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 13) {
-            return (botnet_p2p.MessageOuterClass.Message.Leave) payload_;
+            return (Leave) payload_;
           }
-          return botnet_p2p.MessageOuterClass.Message.Leave.getDefaultInstance();
+          return Leave.getDefaultInstance();
         }
       }
       /**
-       * <code>.botnet_p2p.Message.Leave leave = 13;</code>
+       * <code>.botnet_p2p.Message.Leave pLeave = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          botnet_p2p.MessageOuterClass.Message.Leave, botnet_p2p.MessageOuterClass.Message.Leave.Builder, botnet_p2p.MessageOuterClass.Message.LeaveOrBuilder> 
-          getLeaveFieldBuilder() {
-        if (leaveBuilder_ == null) {
+          Leave, Leave.Builder, LeaveOrBuilder>
+          getPLeaveFieldBuilder() {
+        if (pLeaveBuilder_ == null) {
           if (!(payloadCase_ == 13)) {
-            payload_ = botnet_p2p.MessageOuterClass.Message.Leave.getDefaultInstance();
+            payload_ = Leave.getDefaultInstance();
           }
-          leaveBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              botnet_p2p.MessageOuterClass.Message.Leave, botnet_p2p.MessageOuterClass.Message.Leave.Builder, botnet_p2p.MessageOuterClass.Message.LeaveOrBuilder>(
-                  (botnet_p2p.MessageOuterClass.Message.Leave) payload_,
+          pLeaveBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              Leave, Leave.Builder, LeaveOrBuilder>(
+                  (Leave) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 13;
         onChanged();;
-        return leaveBuilder_;
+        return pLeaveBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -7200,12 +7200,12 @@ public final class MessageOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:botnet_p2p.Message)
-    private static final botnet_p2p.MessageOuterClass.Message DEFAULT_INSTANCE;
+    private static final Message DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new botnet_p2p.MessageOuterClass.Message();
+      DEFAULT_INSTANCE = new Message();
     }
 
-    public static botnet_p2p.MessageOuterClass.Message getDefaultInstance() {
+    public static Message getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7223,12 +7223,12 @@ public final class MessageOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Message> getParserForType() {
       return PARSER;
     }
 
-    public botnet_p2p.MessageOuterClass.Message getDefaultInstanceForType() {
+    public Message getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7282,34 +7282,34 @@ public final class MessageOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
-      "\n\rMessage.proto\022\nbotnet_p2p\"\374\007\n\007Message\022" +
+    String[] descriptorData = {
+      "\n\rMessage.proto\022\nbotnet_p2p\"\211\010\n\007Message\022" +
       "\014\n\004uuid\030\001 \001(\t\022-\n\004TYPE\030\002 \001(\0162\037.botnet_p2p" +
       ".Message.MessageType\022\016\n\006sender\030\003 \001(\t\022\020\n\010" +
       "receiver\030\004 \001(\t\022\023\n\013propagation\030\005 \001(\010\022\021\n\ts" +
-      "ignature\030\006 \001(\014\022.\n\007command\030\007 \001(\0132\033.botnet" +
-      "_p2p.Message.CommandH\000\0220\n\010response\030\010 \001(\013" +
-      "2\034.botnet_p2p.Message.ResponseH\000\022-\n\004file" +
-      "\030\t \001(\0132\035.botnet_p2p.Message.FileChunkH\000\022" +
-      "4\n\nnatRequest\030\n \001(\0132\036.botnet_p2p.Message" +
-      ".NATRequestH\000\0220\n\010natCheck\030\013 \001(\0132\034.botnet" +
-      "_p2p.Message.NATCheckH\000\022(\n\004join\030\014 \001(\0132\030." +
-      "botnet_p2p.Message.JoinH\000\022*\n\005leave\030\r \001(\013" +
-      "2\031.botnet_p2p.Message.LeaveH\000\0320\n\007Command" +
-      "\022\017\n\007command\030\001 \001(\t\022\024\n\014sendResponse\030\002 \001(\010\032" +
-      "E\n\010Response\022\r\n\005value\030\001 \001(\t\022*\n\006status\030\002 \001" +
-      "(\0162\032.botnet_p2p.Message.Status\032p\n\tFileCh" +
-      "unk\022\014\n\004path\030\001 \001(\t\022\014\n\004name\030\002 \001(\010\022\023\n\013chunk" +
-      "Number\030\003 \001(\r\022\021\n\tallChunks\030\004 \001(\r\022\021\n\tchunk" +
-      "Size\030\005 \001(\r\022\014\n\004data\030\006 \001(\014\032\034\n\nNATRequest\022\016" +
-      "\n\006target\030\001 \001(\t\032\032\n\010NATCheck\022\016\n\006source\030\001 \001" +
-      "(\t\032/\n\004Join\022\n\n\002IP\030\001 \001(\t\022\014\n\004Port\030\002 \001(\t\022\r\n\005" +
-      "isNAT\030\003 \001(\010\032\025\n\005Leave\022\014\n\004guid\030\001 \001(\t\"\206\001\n\013M" +
-      "essageType\022\r\n\tUNDEFINED\020\000\022\013\n\007COMMAND\020\001\022\014" +
-      "\n\010RESPONSE\020\002\022\016\n\nFILE_CHUNK\020\003\022\017\n\013NAT_REQU" +
-      "EST\020\004\022\r\n\tNAT_CHECK\020\005\022\010\n\004PING\020\006\022\010\n\004JOIN\020\007" +
-      "\022\t\n\005LEAVE\020\010\"\032\n\006Status\022\010\n\004FAIL\020\000\022\006\n\002OK\020\001B" +
-      "\t\n\007payloadb\006proto3"
+      "ignature\030\006 \001(\014\022/\n\010pCommand\030\007 \001(\0132\033.botne" +
+      "t_p2p.Message.CommandH\000\0221\n\tpResponse\030\010 \001" +
+      "(\0132\034.botnet_p2p.Message.ResponseH\000\022.\n\005pF" +
+      "ile\030\t \001(\0132\035.botnet_p2p.Message.FileChunk" +
+      "H\000\0225\n\013pNATRequest\030\n \001(\0132\036.botnet_p2p.Mes" +
+      "sage.NATRequestH\000\0221\n\tpNATCheck\030\013 \001(\0132\034.b" +
+      "otnet_p2p.Message.NATCheckH\000\022)\n\005pJoin\030\014 " +
+      "\001(\0132\030.botnet_p2p.Message.JoinH\000\022+\n\006pLeav" +
+      "e\030\r \001(\0132\031.botnet_p2p.Message.LeaveH\000\0326\n\007" +
+      "Command\022\025\n\rcommandString\030\001 \001(\t\022\024\n\014sendRe" +
+      "sponse\030\002 \001(\010\032E\n\010Response\022\r\n\005value\030\001 \001(\t\022" +
+      "*\n\006status\030\002 \001(\0162\032.botnet_p2p.Message.Sta" +
+      "tus\032p\n\tFileChunk\022\014\n\004path\030\001 \001(\t\022\014\n\004name\030\002" +
+      " \001(\010\022\023\n\013chunkNumber\030\003 \001(\r\022\021\n\tallChunks\030\004" +
+      " \001(\r\022\021\n\tchunkSize\030\005 \001(\r\022\014\n\004data\030\006 \001(\014\032\034\n" +
+      "\nNATRequest\022\016\n\006target\030\001 \001(\t\032\032\n\010NATCheck\022" +
+      "\016\n\006source\030\001 \001(\t\032/\n\004Join\022\n\n\002IP\030\001 \001(\t\022\014\n\004P" +
+      "ort\030\002 \001(\t\022\r\n\005isNAT\030\003 \001(\010\032\025\n\005Leave\022\014\n\004gui" +
+      "d\030\001 \001(\t\"\206\001\n\013MessageType\022\r\n\tUNDEFINED\020\000\022\013" +
+      "\n\007COMMAND\020\001\022\014\n\010RESPONSE\020\002\022\016\n\nFILE_CHUNK\020" +
+      "\003\022\017\n\013NAT_REQUEST\020\004\022\r\n\tNAT_CHECK\020\005\022\010\n\004PIN" +
+      "G\020\006\022\010\n\004JOIN\020\007\022\t\n\005LEAVE\020\010\"\032\n\006Status\022\010\n\004FA" +
+      "IL\020\000\022\006\n\002OK\020\001B\t\n\007payloadb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -7328,49 +7328,49 @@ public final class MessageOuterClass {
     internal_static_botnet_p2p_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_botnet_p2p_Message_descriptor,
-        new java.lang.String[] { "Uuid", "TYPE", "Sender", "Receiver", "Propagation", "Signature", "Command", "Response", "File", "NatRequest", "NatCheck", "Join", "Leave", "Payload", });
+        new String[] { "Uuid", "TYPE", "Sender", "Receiver", "Propagation", "Signature", "PCommand", "PResponse", "PFile", "PNATRequest", "PNATCheck", "PJoin", "PLeave", "Payload", });
     internal_static_botnet_p2p_Message_Command_descriptor =
       internal_static_botnet_p2p_Message_descriptor.getNestedTypes().get(0);
     internal_static_botnet_p2p_Message_Command_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_botnet_p2p_Message_Command_descriptor,
-        new java.lang.String[] { "Command", "SendResponse", });
+        new String[] { "CommandString", "SendResponse", });
     internal_static_botnet_p2p_Message_Response_descriptor =
       internal_static_botnet_p2p_Message_descriptor.getNestedTypes().get(1);
     internal_static_botnet_p2p_Message_Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_botnet_p2p_Message_Response_descriptor,
-        new java.lang.String[] { "Value", "Status", });
+        new String[] { "Value", "Status", });
     internal_static_botnet_p2p_Message_FileChunk_descriptor =
       internal_static_botnet_p2p_Message_descriptor.getNestedTypes().get(2);
     internal_static_botnet_p2p_Message_FileChunk_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_botnet_p2p_Message_FileChunk_descriptor,
-        new java.lang.String[] { "Path", "Name", "ChunkNumber", "AllChunks", "ChunkSize", "Data", });
+        new String[] { "Path", "Name", "ChunkNumber", "AllChunks", "ChunkSize", "Data", });
     internal_static_botnet_p2p_Message_NATRequest_descriptor =
       internal_static_botnet_p2p_Message_descriptor.getNestedTypes().get(3);
     internal_static_botnet_p2p_Message_NATRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_botnet_p2p_Message_NATRequest_descriptor,
-        new java.lang.String[] { "Target", });
+        new String[] { "Target", });
     internal_static_botnet_p2p_Message_NATCheck_descriptor =
       internal_static_botnet_p2p_Message_descriptor.getNestedTypes().get(4);
     internal_static_botnet_p2p_Message_NATCheck_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_botnet_p2p_Message_NATCheck_descriptor,
-        new java.lang.String[] { "Source", });
+        new String[] { "Source", });
     internal_static_botnet_p2p_Message_Join_descriptor =
       internal_static_botnet_p2p_Message_descriptor.getNestedTypes().get(5);
     internal_static_botnet_p2p_Message_Join_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_botnet_p2p_Message_Join_descriptor,
-        new java.lang.String[] { "IP", "Port", "IsNAT", });
+        new String[] { "IP", "Port", "IsNAT", });
     internal_static_botnet_p2p_Message_Leave_descriptor =
       internal_static_botnet_p2p_Message_descriptor.getNestedTypes().get(6);
     internal_static_botnet_p2p_Message_Leave_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_botnet_p2p_Message_Leave_descriptor,
-        new java.lang.String[] { "Guid", });
+        new String[] { "Guid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
