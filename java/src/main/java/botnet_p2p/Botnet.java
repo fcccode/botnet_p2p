@@ -10,9 +10,9 @@ public class Botnet {
 
 
     Botnet(int port) {
+        Runtime.getRuntime().addShutdownHook(new ShutdownHandler());
         server = new Server(port);
         server.start();
-        Runtime.getRuntime().addShutdownHook(new ShutdownHandler());
     }
 
     public static void main(String args[]) {

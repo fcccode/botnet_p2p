@@ -1,13 +1,14 @@
 package botnet_p2p;
 
-import botnet_p2p.MessageOuterClass.Message;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.nio.ByteBuffer;
-import java.nio.channels.*;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -16,11 +17,13 @@ public class Server extends Thread {
 
     private static final Logger logger = LogManager.getLogger(Server.class);
     private final int port;
+    private final MessageHandlers messageHandler;
     private ServerSocketChannel serverSocketChannel;
     private Selector selector;
 
     Server(int port) {
         this.port = port;
+        this.messageHandler = new MessageHandlers();
     }
 
     @Override
@@ -44,12 +47,13 @@ public class Server extends Thread {
 
                     if (key.isAcceptable()) {
                         logger.info("new connection is possible");
-                        handleNewConnection(selector);
+                        handleNewIncomingConnection(selector);
                     }
 
                     if (key.isReadable()) {
-                        handleNewMessage(key.channel(), selector);
+                        messageHandler.handleNewMessage(key.channel());
                     }
+
                     it.remove();
                 }
 
@@ -64,26 +68,13 @@ public class Server extends Thread {
         }
     }
 
-    private void handleNewConnection(Selector selector) throws IOException {
+    private void handleNewIncomingConnection(Selector selector) throws IOException {
         SocketChannel clientSocket = serverSocketChannel.accept();
         clientSocket.configureBlocking(false);
         clientSocket.register(selector, SelectionKey.OP_READ);
+        logger.info("new connection established");
     }
 
-    private void handleNewMessage(SelectableChannel channel, Selector selector) throws IOException {
-        SocketChannel client = (SocketChannel) channel;
-        ByteBuffer inputBuffer = ByteBuffer.allocate(512);
-        if (client.read(inputBuffer) == -1) {
-            client.close();
-            return;
-        }
-        ByteBuffer messageBuffer = ByteBuffer.wrap(inputBuffer.array(), 0, inputBuffer.position());
-        Message message = Message.parseFrom(messageBuffer);
-        inputBuffer.clear();
-
-        logger.info("message parsed");
-        logger.info("message content:\r\n" + message.toString());
-    }
 
     @Override
     public void interrupt() {
