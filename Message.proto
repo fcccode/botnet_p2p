@@ -20,7 +20,7 @@ message Message {
 
 
     message Command {
-        string command = 1;
+        string commandString = 1;
         bool sendResponse = 2;
     }
 
@@ -63,12 +63,12 @@ message Message {
     bool propagation = 5;
     bytes signature = 6;
     oneof payload {
-        Command command = 7;
-        Response response = 8;
-        FileChunk file = 9;
-        NATRequest natRequest = 10;
-        NATCheck natCheck = 11;
-        Join join = 12;
-        Leave leave = 13;
+        Command pCommand = 7;
+        Response pResponse = 8;
+        FileChunk pFile = 9;
+        NATRequest pNATRequest = 10;
+        NATCheck pNATCheck = 11;
+        Join pJoin = 12;
+        Leave pLeave = 13;
     }
 }
