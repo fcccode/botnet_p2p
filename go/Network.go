@@ -30,7 +30,7 @@ func clientRoutine() {
 	var connection net.Conn
 	for _, ip := range KnownHosts {
 		addr := ip + ":" + strconv.Itoa(defaultPort)
-		conn, err := net.Dial("tcp", addr)
+		conn, err := net.Dial("tcp4", addr)
 		if err != nil {
 			log.Println(err)
 			continue
@@ -50,7 +50,7 @@ func clientRoutine() {
 }
 
 func serverRoutine(port int, terminate chan struct{}) {
-	listener, err := net.Listen("tcp", ":"+strconv.Itoa(port))
+	listener, err := net.Listen("tcp4", ":"+strconv.Itoa(port))
 	if err != nil {
 		log.Fatalf("Listeninig at port %d failed, %s", port, err)
 		return
