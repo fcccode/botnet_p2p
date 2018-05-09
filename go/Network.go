@@ -25,7 +25,6 @@ func fillRoutingTable(connection net.Conn) {
 }
 
 func clientRoutine() {
-
 	nodeDesc.isNAT, _ = checkNAT()
 
 	var connection net.Conn
@@ -33,6 +32,7 @@ func clientRoutine() {
 		addr := ip + ":" + strconv.Itoa(defaultPort)
 		conn, err := net.Dial("tcp", addr)
 		if err != nil {
+			log.Println(err)
 			continue
 		}
 		connection = conn
@@ -40,16 +40,22 @@ func clientRoutine() {
 	}
 	log.Printf("NAT: %t\n", nodeDesc.isNAT)
 	fillRoutingTable(connection)
+
+	message := &Message{}
+	message.TYPE = Message_JOIN
+	data, _ := proto.Marshal(message)
+	connection.Write(data)
+
 	defer connection.Close()
 }
 
 func serverRoutine(port int, terminate chan struct{}) {
 	listener, err := net.Listen("tcp", ":"+strconv.Itoa(port))
-	defer listener.Close()
 	if err != nil {
 		log.Fatalf("Listeninig at port %d failed, %s", port, err)
 		return
 	}
+	defer listener.Close()
 	log.Printf("Listeninig at port: %d", port)
 	newConnection := make(chan net.Conn)
 
