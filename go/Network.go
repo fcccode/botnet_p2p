@@ -11,6 +11,8 @@ import (
 type UUID string
 
 type NodeDescription struct {
+	IP string
+	port string
 	isNAT bool
 }
 
@@ -26,6 +28,8 @@ func fillRoutingTable(connection net.Conn) {
 
 func clientRoutine() {
 	nodeDesc.isNAT, _ = checkNAT()
+	nodeDesc.IP, _ = getRemoteIP()
+	nodeDesc.port = strconv.Itoa(defaultPort)
 
 	var connection net.Conn
 	for _, ip := range KnownHosts {
@@ -41,8 +45,16 @@ func clientRoutine() {
 	log.Printf("NAT: %t\n", nodeDesc.isNAT)
 	fillRoutingTable(connection)
 
-	message := &Message{}
-	message.TYPE = Message_JOIN
+	message := &Message{
+		TYPE: Message_JOIN,
+		Payload: &Message_Join_{
+			&Message_Join{
+				IP: nodeDesc.IP,
+				IsNAT: nodeDesc.isNAT,
+				Port: nodeDesc.port,
+			},
+		},
+	}
 	data, _ := proto.Marshal(message)
 	connection.Write(data)
 
@@ -109,7 +121,7 @@ func clientHandler(conn net.Conn, done chan struct{}) {
 			log.Println("Terminating connection with client:", conn.RemoteAddr().String())
 			return
 		case message := <-messageChannel:
-			log.Printf("Received message of type: %v\n", message.TYPE.String())
+			log.Printf("Received message of type %v: %v\n", message.TYPE.String(), message.String())
 		}
 	}
 }
