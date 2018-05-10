@@ -10,6 +10,7 @@ import (
 
 var globalMessageChannel = make(chan Message, messageBufferSize)
 
+
 func spawnConnection(c net.Conn, in chan Message, out chan Message, kill chan struct{}) {
 	defer c.Close()
 	buffer := make([]byte, 12000)
@@ -49,8 +50,9 @@ func clientRoutine(kill chan struct{}) {
 	nodeDesc.isNAT, _ = checkNAT()
 	nodeDesc.IP, _ = getRemoteIP()
 	nodeDesc.port = strconv.Itoa(defaultPort)
+	nodeDesc.guid = generateUUID()
 
-	log.Printf("NAT: %t\n", nodeDesc.isNAT)
+	log.Printf("Node: %v\n", nodeDesc)
 
 	// find available known host for routing table propagation
 	var connection net.Conn
@@ -76,17 +78,15 @@ func clientRoutine(kill chan struct{}) {
 	go handleMessages(input, output, kill)
 
 	// send JOIN message
-	message := &Message{
+	input <- Message{
 		TYPE: Message_JOIN,
 		Payload: &Message_PJoin{
 			&Message_Join{
 				IP:    nodeDesc.IP,
 				IsNAT: nodeDesc.isNAT,
 				Port:  nodeDesc.port,
-			},
-		},
-	}
-	input <- *message
+			}}}
+
 }
 
 func serverRoutine(port int, terminate chan struct{}) {
@@ -134,10 +134,18 @@ func handleMessages(in chan Message, out chan Message, kill chan struct{}) {
 		case <-kill:
 			return
 		case message := <-out:
-			log.Printf("Received message of type %v: %v\n", message.TYPE.String(), message.String())
 			switch message.TYPE {
 			case Message_JOIN:
 				in <- Message{TYPE: Message_PING}
+				break
+			case Message_NAT_REQUEST:
+					//find if requested node is already waiting, if not add to queue
+				break
+			case Message_NAT_CHECK:
+					// find if anyone want to connect if so, delegate to relay methods
+			default:
+				globalMessageChannel <- message
+				break
 			}
 		}
 	}
