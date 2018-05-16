@@ -1,117 +1,151 @@
 package main
 
 import (
-	"fmt"
 	"net"
 	"strconv"
 	"log"
-	"net/http"
-	"io/ioutil"
 	"io"
 	"github.com/golang/protobuf/proto"
 )
 
-func getRemoteIP() (string, error) {
-	var remoteIP = "127.0.0.1"
-	response, err := http.Get("https://api.ipify.org")
-	if err != nil {
-		return remoteIP, err
-	}
-	defer response.Body.Close()
-	if response.StatusCode == http.StatusOK {
-		bodyBytes, err := ioutil.ReadAll(response.Body)
-		if err != nil {
-			return remoteIP, err
-		}
-		remoteIP = string(bodyBytes)
-	}
-	return remoteIP, nil
-}
+var globalMessageChannel = make(chan Message, messageBufferSize)
 
-func getLocalIPs() ([]string, error) {
-	ips := make([]string, 8)
-	interfaces, err := net.Interfaces()
-	if err != nil {
-		return ips, err
-	}
-	for _, i := range interfaces {
-		addresses, err := i.Addrs()
-		if err != nil {
-			return ips, err
-		}
-		for _, addr := range addresses {
-			var ip net.IP
-			switch v := addr.(type) {
-			case *net.IPNet:
-				ip = v.IP
-			case *net.IPAddr:
-				ip = v.IP
+
+func spawnConnection(c net.Conn, in chan Message, out chan Message, kill chan struct{}) {
+	defer c.Close()
+	buffer := make([]byte, 12000)
+	//handle incoming messages
+	go func() {
+		for {
+			message := &Message{}
+			n, err := c.Read(buffer)
+			if err == io.EOF {
+				return
 			}
-			if ip.To4() != nil {
-				ips = append(ips, ip.To4().String())
+			if err := proto.Unmarshal(buffer[:n], message); err != nil {
+				log.Println("Unable to read message.", err)
+				continue
 			}
+			log.Println("Received message:", message)
+			out <- *message
+		}
+	}()
+	//handle outgoing messages
+	for {
+		select {
+		case <-kill:
+			return
+		case msg := <-in:
+			log.Println("Sending message:", c.RemoteAddr().String(), msg)
+			data, _ := proto.Marshal(&msg)
+			c.Write(data)
 		}
 	}
-	return ips, nil
 }
 
-func checkNAT() (bool, error) {
-	remoteIP, err := getRemoteIP()
-	if err != nil {
-		return true, err
-	}
-	log.Println("Remote IP:", remoteIP)
-	localIPs, err := getLocalIPs()
+func clientRoutine(kill chan struct{}) {
 
-	for _, localIP := range localIPs {
-		if localIP == remoteIP{
-			return false, nil
+	var nodeDesc NodeDescription
+
+	nodeDesc.isNAT, _ = checkNAT()
+	nodeDesc.IP, _ = getRemoteIP()
+	nodeDesc.port = strconv.Itoa(defaultPort)
+	nodeDesc.guid = generateUUID()
+
+	log.Printf("Node: %v\n", nodeDesc)
+
+	// find available known host for routing table propagation
+	var connection net.Conn
+	for _, ip := range KnownHosts {
+		addr := ip + ":" + strconv.Itoa(defaultPort)
+		conn, err := net.Dial("tcp4", addr)
+		if err != nil {
+			log.Println(err)
+			continue
 		}
+		connection = conn
+		break
+	}
+	if connection == nil {
+		log.Println("No known hosts avaliable.")
+		return
 	}
 
-	return true, nil
+	//configure connection for receiving messages
+	input := make(chan Message)
+	output := make(chan Message)
+	go spawnConnection(connection, input, output, kill)
+	go handleMessages(input, output, kill)
+
+	// send JOIN message
+	input <- Message{
+		TYPE: Message_JOIN,
+		Payload: &Message_PJoin{
+			&Message_Join{
+				IP:    nodeDesc.IP,
+				IsNAT: nodeDesc.isNAT,
+				Port:  nodeDesc.port,
+			}}}
+
 }
 
-func serverRoutine(port int) {
-	listen, err := net.Listen("tcp", ":"+strconv.Itoa(port))
-	defer listen.Close()
+func serverRoutine(port int, terminate chan struct{}) {
+	// create listener
+	listener, err := net.Listen("tcp4", ":"+strconv.Itoa(port))
 	if err != nil {
 		log.Fatalf("Listeninig at port %d failed, %s", port, err)
 		return
 	}
 	log.Printf("Listeninig at port: %d", port)
-	for {
-		conn, err := listen.Accept()
-		if err != nil {
-			log.Fatalln(err)
-			continue
+	defer listener.Close()
+	// accept new connections
+	newConnection := make(chan net.Conn)
+	go func() {
+		for {
+			c, err := listener.Accept()
+			if err != nil {
+				log.Println(err)
+			}
+			newConnection <- c
 		}
-		log.Println("New connection at:", conn.RemoteAddr().String())
-		done := make(chan struct{})
-		go clientHandler(conn, done)
+	}()
+
+	kill := make(chan struct{})
+
+	for {
+		select {
+		case <-terminate:
+			log.Println("Terminating listener")
+			close(kill)
+			return
+		case conn := <-newConnection:
+			log.Println("New connection at:", conn.RemoteAddr().String())
+			input := make(chan Message)
+			output := make(chan Message)
+			go spawnConnection(conn, input, output, kill)
+			go handleMessages(input, output, kill)
+		}
 	}
 }
 
-func clientHandler(conn net.Conn, done chan struct{}) {
-	defer conn.Close()
-	var buffer = make([]byte, 12000) //change max buffer size to match docs
+func handleMessages(in chan Message, out chan Message, kill chan struct{}) {
 	for {
 		select {
-		case <-done:
+		case <-kill:
 			return
-		default:
-			{
-				message := &Message{}
-				_, err := conn.Read(buffer)
-				if err == io.EOF {
-					return
-				}
-				if err := proto.Unmarshal(buffer, message); err != nil {
-					log.Fatalln("Unable to read message.", err)
-					continue
-				}
-				fmt.Printf("Received message of type: %v\n", message.TYPE.String())
-
+		case message := <-out:
+			switch message.TYPE {
+			case Message_JOIN:
+				in <- Message{TYPE: Message_PING}
+				break
+			case Message_NAT_REQUEST:
+					//find if requested node is already waiting, if not add to queue
+				break
+			case Message_NAT_CHECK:
+					// find if anyone want to connect if so, delegate to relay methods
+			default:
+				globalMessageChannel <- message
+				break
 			}
 		}
 	}
