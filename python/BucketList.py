@@ -21,13 +21,14 @@ class BucketList(object):
     """
     Data structure of BucketList. Basically it is list of list of size k.
     """
-    def __init__(self, bucket_size, buckets_number):
+    def __init__(self, bucket_size, buckets_number, id):
         """
         :param bucket_size: Size of every bucket
         :param buckets_number: How many buckets to create
         """
         self.bucket_size = bucket_size
         self.buckets = [[] for i in range(buckets_number)]
+        self.id = id
         self.lock = threading.Lock()
 
     def insert(self, peer):
