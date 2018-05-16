@@ -15,30 +15,25 @@
 #include <string>
 
 class Client {
-public:
-    Client();
+ public:
+  Client(std::string host, uint16_t port);
+  ~Client();
 
-    ~Client();
+  void run();
 
-    void run();
+ protected:
+  void setup_socket(std::string host, uint16_t port);
+  void close_socket();
 
-protected:
-    void create();
+  bool send_request(std::string);
+  bool get_response();
 
-    void close_socket();
+ private:
+  int connection_socket;
+  struct sockaddr_in server_address;
 
-    void echo();
-
-    bool send_request(std::string);
-
-    bool get_response();
-
-    int server_;
-    int buflen_;
-    char *buf_;
-
-private:
-    const char *socket_name_;
+  int buffer_size;
+  char *buffer;
 };
 
 #endif //CPP_CLIENT_H

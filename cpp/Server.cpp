@@ -1,12 +1,7 @@
 #include "Server.h"
-#include <iostream>
 
-Server::Server(std::string port) {
-  //Initialize static mutex from MyThread
-//    MyThread::InitMutex();
-
-  // TODO: convert port to uint16_t
-  setup_socket(8999);
+Server::Server(uint16_t port) {
+  setup_socket(port);
 }
 
 Server::~Server() {
@@ -55,9 +50,9 @@ void Server::run() {
 
     if(client.socket < 0) {
       std::cerr << "Error: Failed to accept client." << std::endl;
-    }
-    else {
-      client_connections.emplace_back(std::move(std::thread([&] (ClientConnection client) { Server::handle_client(client); }, client)));
+    } else {
+      client_connections.emplace_back(
+        std::move(std::thread([&](ClientConnection client) { Server::handle_client(client); }, client)));
       std::cout << "Client connected!" << std::endl;
     }
   }

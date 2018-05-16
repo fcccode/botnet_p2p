@@ -9,15 +9,16 @@
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <unistd.h>
-
+#include <iostream>
 #include <string>
 #include <thread>
 #include <vector>
+
 #include "ClientConnection.h"
 
 class Server {
  public:
-  Server(std::string port);
+  Server(uint16_t port);
   ~Server();
   Server(Server &&) = default;
 
@@ -26,13 +27,14 @@ class Server {
  protected:
   void setup_socket(uint16_t port);
   void close_socket();
+
   void handle_client(ClientConnection client);
+
   std::string get_request(ClientConnection client);
   bool send_response(ClientConnection client, std::string);
 
-  int connection_socket;
-
  private:
+  int connection_socket;
   struct sockaddr_in server_address, client_address;
   std::vector<std::thread> client_connections;
 };
