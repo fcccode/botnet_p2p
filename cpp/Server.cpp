@@ -80,7 +80,7 @@ void Server::handle_client(ClientConnection client) {
 }
 
 std::string Server::get_request(ClientConnection client) {
-  std::string request = "";
+  std::string request;
   // read until we get a newline
   while(request.find("\n") == std::string::npos) {
     int nread = recv(client.socket, client.buffer, sizeof(client.buffer), 0);
@@ -116,7 +116,6 @@ bool Server::send_response(ClientConnection client, std::string response) {
         continue;
       } else {
         // an error occurred, so break out
-        perror("write");
         return false;
       }
     } else if(nwritten == 0) {

@@ -9,6 +9,8 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <unistd.h>
+#include <sys/un.h>
+#include <arpa/inet.h>
 
 #include <fstream>
 #include <iostream>
@@ -26,7 +28,7 @@ class Client {
   void close_socket();
 
   bool send_request(std::string);
-  bool get_response();
+  std::string get_response();
 
  private:
   int connection_socket;

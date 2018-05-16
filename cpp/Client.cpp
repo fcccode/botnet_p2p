@@ -1,5 +1,3 @@
-#include <sys/un.h>
-#include <arpa/inet.h>
 #include "Client.h"
 
 Client::Client(std::string host, uint16_t port) {
@@ -11,28 +9,8 @@ Client::Client(std::string host, uint16_t port) {
 }
 
 Client::~Client() {
-  delete buffer;
-}
-
-void Client::run() {
-  std::string line;
-
-  // loop to handle_client user interface
-  while(getline(std::cin, line)) {
-    // append a newline
-    line += "\n";
-    // send request
-    bool success = send_request(line);
-    // break if an error occurred
-    if(not success)
-      break;
-    // get a response
-    success = get_response();
-    // break if an error occurred
-    if(not success)
-      break;
-  }
   close_socket();
+  delete buffer;
 }
 
 void Client::setup_socket(std::string host, uint16_t port) {
@@ -51,8 +29,34 @@ void Client::setup_socket(std::string host, uint16_t port) {
   if(connect(connection_socket, (const struct sockaddr *) &server_address, sizeof(sockaddr_in)) < 0) {
     std::cerr << "ERROR: Failed to connect to server." << std::endl;
     exit(-1);
+  } else {
+    std:: cout << "Connected to the server at " << host << ":" << port << "!" << std::endl;
   }
 }
+
+void Client::run() {
+  std::string line;
+
+  // loop to handle_client user interface
+  while(getline(std::cin, line)) {
+    if(line.empty())
+      continue;
+
+    line += "\n"; // used to stop receiving
+
+    std::cout << "Sending: " << line << std::endl;
+    bool success = send_request(line);
+    if(not success)
+      break;
+
+    std::string response = get_response();
+    std::cout << "Received: " << response << std::endl;
+    if(response.empty())
+      break;
+  }
+  close_socket();
+}
+
 
 void Client::close_socket() {
   close(connection_socket);
@@ -71,7 +75,6 @@ bool Client::send_request(std::string request) {
         continue;
       } else {
         // an error occurred, so break out
-        perror("write");
         return false;
       }
     } else if(nwritten == 0) {
@@ -84,8 +87,8 @@ bool Client::send_request(std::string request) {
   return true;
 }
 
-bool Client::get_response() {
-  std::string response = "";
+std::string Client::get_response() {
+  std::string response;
   // read until we get a newline
   while(response.find("\n") == std::string::npos) {
     int nread = recv(connection_socket, buffer, buffer_size, 0);
@@ -103,8 +106,5 @@ bool Client::get_response() {
     // be sure to use append in case we have binary data
     response.append(buffer, nread);
   }
-  // a better client would cut off anything after the newline and
-  // save it in a cache
-  std::cout << response;
-  return true;
+  return response;
 }
