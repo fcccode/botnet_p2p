@@ -20,11 +20,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Network.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Network.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1338">
-              <caret line="138" column="49" lean-forward="true" selection-start-line="138" selection-start-column="49" selection-end-line="138" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding>
                 <element signature="e#14#91#0" expanded="true" />
               </folding>
@@ -32,20 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Globals.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Globals.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kademlia.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Kademlia.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kademlia.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="981">
+              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="e#14#44#0" expanded="true" />
               </folding>
@@ -68,8 +59,8 @@
       <list>
         <option value="$PROJECT_DIR$/Main.go" />
         <option value="$PROJECT_DIR$/Globals.go" />
-        <option value="$PROJECT_DIR$/Network.go" />
         <option value="$PROJECT_DIR$/Kademlia.go" />
+        <option value="$PROJECT_DIR$/Network.go" />
       </list>
     </option>
   </component>
@@ -209,9 +200,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Message.pb.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12691" />
+        <state relative-caret-position="-12976" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Globals.go">
@@ -221,29 +219,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.go">
+    <entry file="file://$PROJECT_DIR$/Kademlia.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="981">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1338">
-          <caret line="138" column="49" lean-forward="true" selection-start-line="138" selection-start-column="49" selection-end-line="138" selection-end-column="49" />
+        <state relative-caret-position="187">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
           <folding>
             <element signature="e#14#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kademlia.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#14#44#0" expanded="true" />
           </folding>
         </state>
       </provider>

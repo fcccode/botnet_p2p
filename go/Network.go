@@ -9,6 +9,7 @@ import (
 )
 
 var globalMessageChannel = make(chan Message, messageBufferSize)
+var routingTable BucketList
 
 
 func spawnConnection(c net.Conn, in chan Message, out chan Message, kill chan struct{}) {

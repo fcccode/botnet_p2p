@@ -49,7 +49,7 @@ type BucketList struct {
 	hostNode      NodeDescription
 }
 
-func (b *BucketList) Init(node NodeDescription) {
+func (b *BucketList) Init(node NodeDescription, ) {
 	b.hostNode = node
 }
 
