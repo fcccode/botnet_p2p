@@ -10,14 +10,21 @@ message Message {
         NAT_REQUEST = 4;
         NAT_CHECK = 5;
         PING = 6;
-        JOIN = 7;
-        LEAVE = 8;
+        LEAVE = 7;
+        FIND_NODE = 8;
+        FOUND_NODES = 9;
     }
     enum Status {
         FAIL = 0;
         OK = 1;
     }
 
+    message NodeDescription {
+        uint64 guid = 1;
+        string IP = 2;
+        string Port = 3;
+        bool isNAT = 4;
+    }
 
     message Command {
         string commandString = 1;
@@ -39,24 +46,27 @@ message Message {
     }
 
     message NATRequest {
-        string target = 1;
+        uint64 target = 1;
     }
 
     message NATCheck {
-        string source = 1;
-    }
-
-    message Join {
-        string IP = 1;
-        string Port = 2;
-        bool isNAT = 3;
+        uint64 source = 1;
     }
     
     message Leave {
-        string guid = 1;
+        uint64 guid = 1;
     }
     
-    string uuid = 1;
+    message FindNode {
+        uint64 guid = 1;
+    }
+    
+    message FoundNodes {
+        repeated NodeDescription nodes = 1;
+    }
+    
+
+    uint64 uuid = 1;
     MessageType type = 2;
     string sender = 3;
     string receiver = 4;
@@ -68,7 +78,8 @@ message Message {
         FileChunk pFile = 9;
         NATRequest pNATRequest = 10;
         NATCheck pNATCheck = 11;
-        Join pJoin = 12;
-        Leave pLeave = 13;
+        Leave pLeave = 12;
+        FindNode pFindMode = 13;
+        FoundNodes pFoundNodes = 14;        
     }
 }
