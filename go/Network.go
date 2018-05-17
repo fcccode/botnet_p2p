@@ -80,13 +80,8 @@ func clientRoutine(kill chan struct{}) {
 
 	// send JOIN message
 	input <- Message{
-		TYPE: Message_JOIN,
-		Payload: &Message_PJoin{
-			&Message_Join{
-				IP:    nodeDesc.IP,
-				IsNAT: nodeDesc.isNAT,
-				Port:  nodeDesc.port,
-			}}}
+		Type: Message_PING,
+		}
 
 }
 
@@ -135,9 +130,24 @@ func handleMessages(in chan Message, out chan Message, kill chan struct{}) {
 		case <-kill:
 			return
 		case message := <-out:
-			switch message.TYPE {
-			case Message_JOIN:
-				in <- Message{TYPE: Message_PING}
+			switch message.Type {
+			case Message_FIND_NODE:
+				nodes := make([]*Message_NodeDescription, 0)
+				in <- Message{
+					Type: Message_FOUND_NODES,
+					Payload: &Message_PFoundNodes{
+						&Message_FoundNodes{
+							Nodes: nodes,
+						}}}
+				break
+			case Message_FOUND_NODES:
+				nodes := message.GetPFoundNodes().Nodes
+				for _, node := range nodes {
+					log.Println(node)
+				}
+				break
+			case Message_PING:
+				in <- Message{Type: Message_PING}
 				break
 			case Message_NAT_REQUEST:
 					//find if requested node is already waiting, if not add to queue
@@ -151,3 +161,4 @@ func handleMessages(in chan Message, out chan Message, kill chan struct{}) {
 		}
 	}
 }
+
